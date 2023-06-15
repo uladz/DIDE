@@ -1,0 +1,910 @@
+import "default.loot"
+
+    sub WeaponsDeadBodyarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Melee_BrassKnucklesLightGen", 1.0);
+            Item("Melee_BrassKnucklesGen", 1.0);
+            Item("Melee_BrassKnucklesHeavyGen", 1.0);
+            Item("Melee_BrassKnucklesSpikedGen", 1.0);
+            Item("Melee_BrassKnucklesBadassGen", 1.0);
+            Item("Melee_BrassKnucklesBrutalGen", 1.0);
+            Item("Melee_HammerGen", 1.0);
+            Item("Melee_HammerNailGen", 1.0);
+            Item("Melee_HammerHeavyGen", 1.0);
+            Item("Melee_PoliceBatonGen", 1.0);
+            Item("Melee_MetalBatonGen", 1.0);
+            Item("Melee_HeavyBatonGen", 1.0);
+            Item("Melee_StickGen", 1.0);
+            Item("Melee_WoodenBatonGen", 1.0);
+            Item("Melee_TonfaGen", 1.0);
+            Item("Melee_BaseballBatGen", 1.0);
+            Item("Melee_BaseballBatBigGen", 1.0);
+            Item("Melee_MetalBaseballBatGen", 1.0);
+            Item("Melee_WrenchGen", 1.0);
+            Item("Melee_HeavyWrenchGen", 1.0);
+            Item("Melee_SledgeHammerGen", 1.0);
+            Item("Melee_SledgeHammerConstGen", 1.0);
+            Item("Melee_SledgeHammerMaulGen", 1.0);
+            Item("Melee_BoGen", 1.0);
+            Item("Melee_MaceGen", 1.0);
+            Item("Melee_MaceCudgelGen", 1.0);
+            Item("Melee_MaceMorningStarGen", 1.0);
+            Item("Melee_MaceFlangedGen", 1.0);
+            Item("Melee_MaceHeavyStarGen", 1.0);
+            Item("Melee_MaceExoticGen", 1.0);
+            Item("Melee_CrowbarGen", 1.0);
+            Item("Melee_PickaxeGen", 1.0);
+            Item("Melee_KanaboGen", 1.0);
+            Item("Melee_KanaboMetalGen", 1.0);
+            Item("Melee_KnifeHomemadeGen", 1.0);
+            Item("Melee_KnifeGen", 1.0);
+            Item("Melee_KnifeKitchenGen", 1.0);
+            Item("Melee_KnifeWickedGen", 1.0);
+            Item("Melee_KnifeDivingGen", 1.0);
+            Item("Melee_KnifeMilitaryGen", 1.0);
+            Item("Melee_DoubleBladeHomemadeGen", 1.0);
+            Item("Melee_DoubleBladeGen", 1.0);
+            Item("Melee_DoubleBladeBattleGen", 1.0);
+            Item("Melee_DoubleBladeWickedGen", 1.0);
+            Item("Melee_DoubleBladeExoticGen", 1.0);
+            Item("Melee_ReaperGen", 1.0);
+            Item("Melee_CleaverHomemadeGen", 1.0);
+            Item("Melee_CleaverGen", 1.0);
+            Item("Melee_CleaverSlicerGen", 1.0);
+            Item("Melee_CaneKnifeGen", 1.0);
+            Item("Melee_CaneKnifeSugarGen", 1.0);
+            Item("Melee_CaneKnifeExoticGen", 1.0);
+            Item("Melee_SickleWickedGen", 1.0);
+            Item("Melee_SickleGen", 1.0);
+            Item("Melee_SickleSavageGen", 1.0);
+            Item("Melee_SickleBattleGen", 1.0);
+            Item("Melee_SickleBrutalGen", 1.0);
+            Item("Melee_SickleExoticGen", 1.0);
+            Item("Melee_MacheteHomemadeGen", 1.0);
+            Item("Melee_MacheteGen", 1.0);
+            Item("Melee_MacheteBoloGen", 1.0);
+            Item("Melee_MacheteMilitaryGen", 1.0);
+            Item("Melee_MacheteBrutalGen", 1.0);
+            Item("Melee_MacheteKukriGen", 1.0);
+            Item("Melee_AxeUniversalGen", 1.0);
+            Item("Melee_AxeSplittingGen", 1.0);
+            Item("Melee_AxeHatchetGen", 1.0);
+            Item("Melee_TantoGen", 1.0);
+            Item("Melee_WakizashiGen", 1.0);
+            Item("Melee_KatanaGen", 1.0);
+            Item("Melee_BigAxeSplittingGen", 1.0);
+            Item("Melee_BigAxeUniversalGen", 1.0);
+            Item("Melee_BigAxeFireGen", 1.0);
+            Item("Melee_leg_Italianplumber", 1.0);
+            Item("Melee_leg_AssassinsGreed", 1.0);
+            Item("Melee_leg_Homerun", 1.0);
+            Item("Melee_leg_BluntSpeaker", 1.0);
+            Item("Melee_leg_VikingOfTheSouth", 1.0);
+            Item("Melee_leg_Ban", 1.0);
+            Item("Melee_leg_M.C.", 1.0);
+            Item("Melee_leg_Two-Parter", 1.0);
+            Item("Melee_leg_MasterChef", 1.0);
+            Item("Melee_leg_Bushmaster", 1.0);
+            Item("Melee_leg_BouncersPal", 1.0);
+            Item("Melee_leg_Banisher", 1.0);
+            Item("Melee_leg_Eviscerator", 1.0);
+            Item("Firearm_ColtGen", 1.0);
+            Item("Firearm_MagnumGen", 1.0);
+            Item("Firearm_M9Gen", 1.0);
+            Item("Firearm_DesertEagleGen", 1.0);
+            Item("Firearm_ShotgunShortGen", 1.0);
+            Item("Firearm_ShotgunGen", 1.0);
+            Item("Firearm_Shotgun_BGen", 1.0);
+            Item("Firearm_Shotgun_CGen", 1.0);
+            Item("Firearm_Shotgun_DGen", 1.0);
+            Item("Firearm_Shotgun_EGen", 1.0);
+            Item("Firearm_Shotgun_FGen", 1.0);
+            Item("Firearm_AutoRifleGen", 1.0);
+            Item("Firearm_AutoRifle_BGen", 1.0);
+            Item("Firearm_AutoRifle_CGen", 1.0);
+            Item("Firearm_AutoRifle_DGen", 1.0);
+            Item("Firearm_AutoRifle_EGen", 1.0);
+            Item("Firearm_BurstRifleGen", 1.0);
+            Item("Firearm_BurstRifle_BGen", 1.0);
+            Item("Firearm_SingleShotRifleGen", 1.0);
+            Item("Firearm_SingleShotRifle_BGen", 1.0);
+            Item("Throwable_Molotov", 1.0);
+        }
+    }
+
+    sub WeaponsWardrobearena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsToolBoxarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Melee_BrassKnucklesLightGen", 1.0);
+            Item("Melee_BrassKnucklesGen", 1.0);
+            Item("Melee_BrassKnucklesHeavyGen", 1.0);
+            Item("Melee_BrassKnucklesSpikedGen", 1.0);
+            Item("Melee_BrassKnucklesBadassGen", 1.0);
+            Item("Melee_BrassKnucklesBrutalGen", 1.0);
+            Item("Melee_HammerGen", 1.0);
+            Item("Melee_HammerNailGen", 1.0);
+            Item("Melee_HammerHeavyGen", 1.0);
+            Item("Melee_PoliceBatonGen", 1.0);
+            Item("Melee_MetalBatonGen", 1.0);
+            Item("Melee_HeavyBatonGen", 1.0);
+            Item("Melee_StickGen", 1.0);
+            Item("Melee_WoodenBatonGen", 1.0);
+            Item("Melee_TonfaGen", 1.0);
+            Item("Melee_BaseballBatGen", 1.0);
+            Item("Melee_BaseballBatBigGen", 1.0);
+            Item("Melee_MetalBaseballBatGen", 1.0);
+            Item("Melee_WrenchGen", 1.0);
+            Item("Melee_HeavyWrenchGen", 1.0);
+            Item("Melee_SledgeHammerGen", 1.0);
+            Item("Melee_SledgeHammerConstGen", 1.0);
+            Item("Melee_SledgeHammerMaulGen", 1.0);
+            Item("Melee_BoGen", 1.0);
+            Item("Melee_MaceGen", 1.0);
+            Item("Melee_MaceCudgelGen", 1.0);
+            Item("Melee_MaceMorningStarGen", 1.0);
+            Item("Melee_MaceFlangedGen", 1.0);
+            Item("Melee_MaceHeavyStarGen", 1.0);
+            Item("Melee_MaceExoticGen", 1.0);
+            Item("Melee_CrowbarGen", 1.0);
+            Item("Melee_PickaxeGen", 1.0);
+            Item("Melee_KanaboGen", 1.0);
+            Item("Melee_KanaboMetalGen", 1.0);
+            Item("Melee_KnifeHomemadeGen", 1.0);
+            Item("Melee_KnifeGen", 1.0);
+            Item("Melee_KnifeKitchenGen", 1.0);
+            Item("Melee_KnifeWickedGen", 1.0);
+            Item("Melee_KnifeDivingGen", 1.0);
+            Item("Melee_KnifeMilitaryGen", 1.0);
+            Item("Melee_DoubleBladeHomemadeGen", 1.0);
+            Item("Melee_DoubleBladeGen", 1.0);
+            Item("Melee_DoubleBladeBattleGen", 1.0);
+            Item("Melee_DoubleBladeWickedGen", 1.0);
+            Item("Melee_DoubleBladeExoticGen", 1.0);
+            Item("Melee_ReaperGen", 1.0);
+            Item("Melee_CleaverHomemadeGen", 1.0);
+            Item("Melee_CleaverGen", 1.0);
+            Item("Melee_CleaverSlicerGen", 1.0);
+            Item("Melee_CaneKnifeGen", 1.0);
+            Item("Melee_CaneKnifeSugarGen", 1.0);
+            Item("Melee_CaneKnifeExoticGen", 1.0);
+            Item("Melee_SickleWickedGen", 1.0);
+            Item("Melee_SickleGen", 1.0);
+            Item("Melee_SickleSavageGen", 1.0);
+            Item("Melee_SickleBattleGen", 1.0);
+            Item("Melee_SickleBrutalGen", 1.0);
+            Item("Melee_SickleExoticGen", 1.0);
+            Item("Melee_MacheteHomemadeGen", 1.0);
+            Item("Melee_MacheteGen", 1.0);
+            Item("Melee_MacheteBoloGen", 1.0);
+            Item("Melee_MacheteMilitaryGen", 1.0);
+            Item("Melee_MacheteBrutalGen", 1.0);
+            Item("Melee_MacheteKukriGen", 1.0);
+            Item("Melee_AxeUniversalGen", 1.0);
+            Item("Melee_AxeSplittingGen", 1.0);
+            Item("Melee_AxeHatchetGen", 1.0);
+            Item("Melee_TantoGen", 1.0);
+            Item("Melee_WakizashiGen", 1.0);
+            Item("Melee_KatanaGen", 1.0);
+            Item("Melee_BigAxeSplittingGen", 1.0);
+            Item("Melee_BigAxeUniversalGen", 1.0);
+            Item("Melee_BigAxeFireGen", 1.0);
+            Item("Melee_leg_Italianplumber", 1.0);
+            Item("Melee_leg_AssassinsGreed", 1.0);
+            Item("Melee_leg_Homerun", 1.0);
+            Item("Melee_leg_BluntSpeaker", 1.0);
+            Item("Melee_leg_VikingOfTheSouth", 1.0);
+            Item("Melee_leg_Ban", 1.0);
+            Item("Melee_leg_M.C.", 1.0);
+            Item("Melee_leg_Two-Parter", 1.0);
+            Item("Melee_leg_MasterChef", 1.0);
+            Item("Melee_leg_Bushmaster", 1.0);
+            Item("Melee_leg_BouncersPal", 1.0);
+            Item("Melee_leg_Banisher", 1.0);
+            Item("Melee_leg_Eviscerator", 1.0);
+            Item("Firearm_ColtGen", 1.0);
+            Item("Firearm_MagnumGen", 1.0);
+            Item("Firearm_M9Gen", 1.0);
+            Item("Firearm_DesertEagleGen", 1.0);
+            Item("Firearm_ShotgunShortGen", 1.0);
+            Item("Firearm_ShotgunGen", 1.0);
+            Item("Firearm_Shotgun_BGen", 1.0);
+            Item("Firearm_Shotgun_CGen", 1.0);
+            Item("Firearm_Shotgun_DGen", 1.0);
+            Item("Firearm_Shotgun_EGen", 1.0);
+            Item("Firearm_Shotgun_FGen", 1.0);
+            Item("Firearm_AutoRifleGen", 1.0);
+            Item("Firearm_AutoRifle_BGen", 1.0);
+            Item("Firearm_AutoRifle_CGen", 1.0);
+            Item("Firearm_AutoRifle_DGen", 1.0);
+            Item("Firearm_AutoRifle_EGen", 1.0);
+            Item("Firearm_BurstRifleGen", 1.0);
+            Item("Firearm_BurstRifle_BGen", 1.0);
+            Item("Firearm_SingleShotRifleGen", 1.0);
+            Item("Firearm_SingleShotRifle_BGen", 1.0);
+            Item("Throwable_Molotov", 1.0);
+        }
+    }
+
+    sub WeaponsBagarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsSafearena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsCashDeskarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsMetalWardrobearena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsElectronicsarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsTrasharena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsSeaweedsarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsFlowersarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsRefrigeratorarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsToolBoxFirearmsarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Firearm_ColtGen", 1.0);
+            Item("Firearm_MagnumGen", 1.0);
+            Item("Firearm_M9Gen", 1.0);
+            Item("Firearm_DesertEagleGen", 1.0);
+            Item("Firearm_ShotgunShortGen", 1.0);
+            Item("Firearm_ShotgunGen", 1.0);
+            Item("Firearm_Shotgun_BGen", 1.0);
+            Item("Firearm_Shotgun_CGen", 1.0);
+            Item("Firearm_Shotgun_DGen", 1.0);
+            Item("Firearm_Shotgun_EGen", 1.0);
+            Item("Firearm_Shotgun_FGen", 1.0);
+            Item("Firearm_AutoRifleGen", 1.0);
+            Item("Firearm_AutoRifle_BGen", 1.0);
+            Item("Firearm_AutoRifle_CGen", 1.0);
+            Item("Firearm_AutoRifle_DGen", 1.0);
+            Item("Firearm_AutoRifle_EGen", 1.0);
+            Item("Firearm_BurstRifleGen", 1.0);
+            Item("Firearm_BurstRifle_BGen", 1.0);
+            Item("Firearm_SingleShotRifleGen", 1.0);
+            Item("Firearm_SingleShotRifle_BGen", 1.0);
+        }
+    }
+
+    sub WeaponsDeadBody_FatManarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsDeadBody_Ramarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsDeadBody_Suiciderarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsDeadBody_Corrupterarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsDeadBody_MeleeFighterarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsDeadBody_Infectedarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub WeaponsDeadBody_Humanarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub CraftPartsDeadBodyarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Powerup_Alcohol", 1.0);
+            Item("CraftPart_Algae", 1.0);
+            Item("CraftPart_BarbedWire", 1.0);
+            Item("CraftPart_Battery", 1.0);
+            Item("CraftPart_BatteryLarge", 1.0);
+            Item("CraftPart_Belt", 1.0);
+            Item("CraftPart_Blade", 1.0);
+            Item("CraftPart_Bolts", 1.0);
+            Item("CraftPart_Clamp", 1.0);
+            Item("CraftPart_Deodorant", 1.0);
+            Item("CraftPart_Detergent", 1.0);
+            Item("CraftPart_ElectronicScrap", 1.0);
+            Item("CraftPart_Flares", 1.0);
+            Item("CraftPart_FlexibleHose", 1.0);
+            Item("CraftPart_GasForLighter", 1.0);
+            Item("CraftPart_Gear", 1.0);
+            Item("CraftPart_Glue", 1.0);
+            Item("CraftPart_LargeNail", 1.0);
+            Item("CraftPart_LemonJuice", 1.0);
+            Item("CraftPart_Lighter", 1.0);
+            Item("CraftPart_Lp4000Battery", 1.0);
+            Item("CraftPart_Magnet", 1.0);
+            Item("CraftPart_Nails", 1.0);
+            Item("CraftPart_Oleander", 1.0);
+            Item("CraftPart_Phone", 1.0);
+            Item("CraftPart_Rag", 1.0);
+            Item("CraftPart_Soap", 1.0);
+            Item("CraftPart_SteelRod", 1.0);
+            Item("CraftPart_StingrayTail", 1.0);
+            Item("CraftPart_Tape", 1.0);
+            Item("CraftPart_Wire", 1.0);
+            Item("CraftPart_Watch", 1.0);
+            Item("CraftPart_Jewelry", 1.0);
+            Item("CraftPart_Diamonds", 1.0);
+            Item("CraftPart_BrandChampagne", 1.0);
+            Item("CraftPart_CabernetSauvignon1977", 1.0);
+        }
+    }
+
+    sub CraftPartsWardrobearena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Powerup_Alcohol", 1.0);
+            Item("CraftPart_Battery", 1.0);
+            Item("CraftPart_BatteryLarge", 1.0);
+            Item("CraftPart_Belt", 1.0);
+            Item("CraftPart_Deodorant", 1.0);
+            Item("CraftPart_Detergent", 1.0);
+            Item("CraftPart_ElectronicScrap", 1.0);
+            Item("CraftPart_Flares", 1.0);
+            Item("CraftPart_GasForLighter", 1.0);
+            Item("CraftPart_Gear", 1.0);
+            Item("CraftPart_Glue", 1.0);
+            Item("CraftPart_LemonJuice", 1.0);
+            Item("CraftPart_Lighter", 1.0);
+            Item("CraftPart_Lp4000Battery", 1.0);
+            Item("CraftPart_MetalScrap", 1.0);
+            Item("CraftPart_Oleander", 1.0);
+            Item("CraftPart_Phone", 1.0);
+            Item("CraftPart_Rag", 1.0);
+            Item("CraftPart_Soap", 1.0);
+            Item("CraftPart_Tape", 1.0);
+            Item("CraftPart_Wire", 1.0);
+            Item("CraftPart_Jewelry", 1.0);
+            Item("CraftPart_Diamonds", 1.0);
+            Item("CraftPart_BrandChampagne", 1.0);
+            Item("CraftPart_CabernetSauvignon1977", 1.0);
+        }
+    }
+
+    sub CraftPartsToolBoxarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub CraftPartsBagarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Powerup_Alcohol", 1.0);
+            Item("CraftPart_Battery", 1.0);
+            Item("CraftPart_BatteryLarge", 1.0);
+            Item("CraftPart_Belt", 1.0);
+            Item("CraftPart_Deodorant", 1.0);
+            Item("CraftPart_GasForLighter", 1.0);
+            Item("CraftPart_Glue", 1.0);
+            Item("CraftPart_LemonJuice", 1.0);
+            Item("CraftPart_Lighter", 1.0);
+            Item("CraftPart_Lp4000Battery", 1.0);
+            Item("CraftPart_Phone", 1.0);
+            Item("CraftPart_Soap", 1.0);
+            Item("CraftPart_Tape", 1.0);
+            Item("CraftPart_Wire", 1.0);
+            Item("CraftPart_Watch", 1.0);
+        }
+    }
+
+    sub CraftPartsSafearena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Powerup_Alcohol", 1.0);
+            Item("CraftPart_Battery", 1.0);
+            Item("CraftPart_BatteryLarge", 1.0);
+            Item("CraftPart_Belt", 1.0);
+            Item("CraftPart_Deodorant", 1.0);
+            Item("CraftPart_GasForLighter", 1.0);
+            Item("CraftPart_Glue", 1.0);
+            Item("CraftPart_LemonJuice", 1.0);
+            Item("CraftPart_Lighter", 1.0);
+            Item("CraftPart_Lp4000Battery", 1.0);
+            Item("CraftPart_Phone", 1.0);
+            Item("CraftPart_Soap", 1.0);
+            Item("CraftPart_Tape", 1.0);
+            Item("CraftPart_Wire", 1.0);
+            Item("CraftPart_Watch", 1.0);
+            Item("CraftPart_Jewelry", 1.0);
+            Item("CraftPart_Diamonds", 1.0);
+            Item("CraftPart_BrandChampagne", 1.0);
+            Item("CraftPart_CabernetSauvignon1977", 1.0);
+        }
+    }
+
+    sub CraftPartsCashDeskarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("CraftPart_Jewelry", 1.0);
+            Item("CraftPart_Diamonds", 1.0);
+        }
+    }
+
+    sub CraftPartsMetalWardrobearena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Powerup_Alcohol", 1.0);
+            Item("CraftPart_BarbedWire", 1.0);
+            Item("CraftPart_Battery", 1.0);
+            Item("CraftPart_BatteryLarge", 1.0);
+            Item("CraftPart_Blade", 1.0);
+            Item("CraftPart_Bolts", 1.0);
+            Item("CraftPart_CircularBlade", 1.0);
+            Item("CraftPart_Clamp", 1.0);
+            Item("CraftPart_Detergent", 1.0);
+            Item("CraftPart_ElectronicScrap", 1.0);
+            Item("CraftPart_EngineParts", 1.0);
+            Item("CraftPart_Flares", 1.0);
+            Item("CraftPart_FlexibleHose", 1.0);
+            Item("CraftPart_Gear", 1.0);
+            Item("CraftPart_Glue", 1.0);
+            Item("CraftPart_LargeNail", 1.0);
+            Item("CraftPart_Lighter", 1.0);
+            Item("CraftPart_Lp4000Battery", 1.0);
+            Item("CraftPart_Magnet", 1.0);
+            Item("CraftPart_MetalScrap", 1.0);
+            Item("CraftPart_Nails", 1.0);
+            Item("CraftPart_Rag", 1.0);
+            Item("CraftPart_Soap", 1.0);
+            Item("CraftPart_SteelRod", 1.0);
+            Item("CraftPart_Tape", 1.0);
+            Item("CraftPart_WeightPlate", 1.0);
+            Item("CraftPart_Wire", 1.0);
+        }
+    }
+
+    sub CraftPartsElectronicsarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("CraftPart_Battery", 1.0);
+            Item("CraftPart_BatteryLarge", 1.0);
+            Item("CraftPart_ElectronicScrap", 1.0);
+            Item("CraftPart_Lp4000Battery", 1.0);
+            Item("CraftPart_Magnet", 1.0);
+        }
+    }
+
+    sub CraftPartsTrasharena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Powerup_Alcohol", 1.0);
+            Item("CraftPart_BarbedWire", 1.0);
+            Item("CraftPart_Battery", 1.0);
+            Item("CraftPart_BatteryLarge", 1.0);
+            Item("CraftPart_Belt", 1.0);
+            Item("CraftPart_Blade", 1.0);
+            Item("CraftPart_Bolts", 1.0);
+            Item("CraftPart_CircularBlade", 1.0);
+            Item("CraftPart_Clamp", 1.0);
+            Item("CraftPart_Deodorant", 1.0);
+            Item("CraftPart_Detergent", 1.0);
+            Item("CraftPart_ElectronicScrap", 1.0);
+            Item("CraftPart_EngineParts", 1.0);
+            Item("CraftPart_Flares", 1.0);
+            Item("CraftPart_FlexibleHose", 1.0);
+            Item("CraftPart_GasForLighter", 1.0);
+            Item("CraftPart_Gear", 1.0);
+            Item("CraftPart_Glue", 1.0);
+            Item("CraftPart_LargeNail", 1.0);
+            Item("CraftPart_Lighter", 1.0);
+            Item("CraftPart_Lp4000Battery", 1.0);
+            Item("CraftPart_Magnet", 1.0);
+            Item("CraftPart_MetalScrap", 1.0);
+            Item("CraftPart_Nails", 1.0);
+            Item("CraftPart_Oleander", 1.0);
+            Item("CraftPart_Phone", 1.0);
+            Item("CraftPart_Rag", 1.0);
+            Item("CraftPart_Soap", 1.0);
+            Item("CraftPart_SteelRod", 1.0);
+            Item("CraftPart_StingrayTail", 1.0);
+            Item("CraftPart_Tape", 1.0);
+            Item("CraftPart_WeightPlate", 1.0);
+            Item("CraftPart_Wire", 1.0);
+        }
+    }
+
+    sub CraftPartsSeaweedsarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("CraftPart_Algae", 1.0);
+            Item("CraftPart_DrawnedMeat", 1.0);
+            Item("CraftPart_Oleander", 1.0);
+            Item("CraftPart_StingrayTail", 1.0);
+            Item("CraftPart_SuiciderMeat", 1.0);
+            Item("CraftPart_Diamonds", 1.0);
+        }
+    }
+
+    sub CraftPartsFlowersarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("CraftPart_Oleander", 1.0);
+        }
+    }
+
+    sub CraftPartsRefrigeratorarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Powerup_Alcohol", 1.0);
+            Item("CraftPart_LemonJuice", 1.0);
+            Item("CraftPart_StingrayTail", 1.0);
+            Item("CraftPart_BrandChampagne", 1.0);
+            Item("CraftPart_CabernetSauvignon1977", 1.0);
+        }
+    }
+
+    sub CraftPartsToolBoxFirearmsarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+        }
+    }
+
+    sub CraftPartsDeadBody_FatManarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("CraftPart_Jewelry", 1.0);
+            Item("CraftPart_Diamonds", 1.0);
+        }
+    }
+
+    sub CraftPartsDeadBody_Ramarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("CraftPart_BarbedWire", 1.0);
+            Item("CraftPart_BatteryLarge", 1.0);
+            Item("CraftPart_Belt", 1.0);
+            Item("CraftPart_Clamp", 1.0);
+            Item("CraftPart_FlexibleHose", 1.0);
+            Item("CraftPart_Glue", 1.0);
+            Item("CraftPart_LargeNail", 1.0);
+            Item("CraftPart_Lighter", 1.0);
+            Item("CraftPart_Lp4000Battery", 1.0);
+            Item("CraftPart_Nails", 1.0);
+            Item("CraftPart_Rag", 1.0);
+            Item("CraftPart_Soap", 1.0);
+            Item("CraftPart_Tape", 1.0);
+            Item("CraftPart_Wire", 1.0);
+        }
+    }
+
+    sub CraftPartsDeadBody_Suiciderarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("CraftPart_Rag", 1.0);
+            Item("CraftPart_SuiciderMeat", 1.0);
+        }
+    }
+
+    sub CraftPartsDeadBody_Corrupterarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("CraftPart_Algae", 1.0);
+            Item("CraftPart_DrawnedMeat", 1.0);
+            Item("CraftPart_Oleander", 1.0);
+            Item("CraftPart_StingrayTail", 1.0);
+        }
+    }
+
+    sub CraftPartsDeadBody_MeleeFighterarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Powerup_Alcohol", 1.0);
+            Item("CraftPart_Battery", 1.0);
+            Item("CraftPart_Belt", 1.0);
+            Item("CraftPart_Bolts", 1.0);
+            Item("CraftPart_Clamp", 1.0);
+            Item("CraftPart_Deodorant", 1.0);
+            Item("CraftPart_Detergent", 1.0);
+            Item("CraftPart_Nails", 1.0);
+            Item("CraftPart_Phone", 1.0);
+            Item("CraftPart_Rag", 1.0);
+        }
+    }
+
+    sub CraftPartsDeadBody_Infectedarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Powerup_Alcohol", 1.0);
+            Item("CraftPart_Algae", 1.0);
+            Item("CraftPart_BarbedWire", 1.0);
+            Item("CraftPart_Battery", 1.0);
+            Item("CraftPart_BatteryLarge", 1.0);
+            Item("CraftPart_Belt", 1.0);
+            Item("CraftPart_Blade", 1.0);
+            Item("CraftPart_Bolts", 1.0);
+            Item("CraftPart_Clamp", 1.0);
+            Item("CraftPart_Deodorant", 1.0);
+            Item("CraftPart_Detergent", 1.0);
+            Item("CraftPart_ElectronicScrap", 1.0);
+            Item("CraftPart_FlexibleHose", 1.0);
+            Item("CraftPart_GasForLighter", 1.0);
+            Item("CraftPart_Gear", 1.0);
+            Item("CraftPart_Glue", 1.0);
+            Item("CraftPart_LargeNail", 1.0);
+            Item("CraftPart_LemonJuice", 1.0);
+            Item("CraftPart_Lighter", 1.0);
+            Item("CraftPart_Lp4000Battery", 1.0);
+            Item("CraftPart_Magnet", 1.0);
+            Item("CraftPart_Nails", 1.0);
+            Item("CraftPart_Oleander", 1.0);
+            Item("CraftPart_Phone", 1.0);
+            Item("CraftPart_Rag", 1.0);
+            Item("CraftPart_Soap", 1.0);
+            Item("CraftPart_SteelRod", 1.0);
+            Item("CraftPart_StingrayTail", 1.0);
+            Item("CraftPart_Tape", 1.0);
+            Item("CraftPart_Wire", 1.0);
+        }
+    }
+
+    sub CraftPartsDeadBody_Humanarena_c(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Powerup_Alcohol", 1.0);
+            Item("CraftPart_Battery", 1.0);
+            Item("CraftPart_Belt", 1.0);
+            Item("CraftPart_Bolts", 1.0);
+            Item("CraftPart_Clamp", 1.0);
+            Item("CraftPart_Deodorant", 1.0);
+            Item("CraftPart_Detergent", 1.0);
+            Item("CraftPart_Nails", 1.0);
+            Item("CraftPart_Phone", 1.0);
+            Item("CraftPart_Rag", 1.0);
+        }
+    }
+sub main()
+{
+    use DefineColors();
+    use ProgressLevelsProb();
+
+    LootedObject(DeadBody, 1.0)
+    {
+        use StandardCash(weight = 9.0, prob = 0.1);
+        use StandardMedKits(weight = 0.8, prob = 1.0);
+        use StandardAmmo(weight = 0.2, prob = 1.0);
+        use WeaponsDeadBodyarena_c(weight = 0.0, prob = 0.5);
+        use CraftPartsDeadBodyarena_c(weight = 0.0, prob = 0.5);
+    }
+
+    LootedObject(Wardrobe, 1.0)
+    {
+        use StandardMedKits(weight = 0.5, prob = 0.9);
+        use StandardCash(weight = 2.0, prob = 0.9);
+        use WeaponsWardrobearena_c(weight = 1.0, prob = 0.9);
+        use CraftPartsWardrobearena_c(weight = 6.0, prob = 0.9);
+    }
+
+    LootedObject(Safe, 1.0)
+    {
+        use BigCash(weight = 9.0, prob = 0.6);
+        use CraftPartsSafearena_c(weight = 1.0, prob = 0.6);
+    }
+    
+    LootedObject(ToolBox, 1.0)
+    {
+        use WeaponsToolBoxarena_c(weight = 1.0, prob = 1.0);
+    }
+
+    LootedObject(Bag, 1.0)
+    {
+        use StandardCash(weight = 6.0, prob = 0.9);
+        use WeaponsBagarena_c(weight = 1.0, prob = 0.9);
+        use CraftPartsBagarena_c(weight = 2.0, prob = 0.9);
+    }
+
+    LootedObject(CashDesk, 1.0)
+    {
+       use StandardCash(weight = 1.0, prob = 0.6);
+       use MediumCash(weight = 4.5, prob = 0.6);
+       use BigCash(weight = 4.5, prob = 0.6);
+    }
+
+LootedObject(MetalWardrobe, 1.0)
+    {
+        use StandardCash(weight = 2.0, prob = 0.9);
+        use WeaponsMetalWardrobearena_c(weight = 1.0, prob = 0.9);
+        use CraftPartsMetalWardrobearena_c(weight = 6.0, prob = 0.9);
+    }
+
+LootedObject(Electronics, 1.0)
+    {        
+        use CraftPartsElectronicsarena_c(weight = 1.0, prob = 0.9);
+    }
+
+LootedObject(Trash, 1.0)
+    {
+        use WeaponsTrasharena_c(weight = 1.0, prob = 0.9);
+        use CraftPartsTrasharena_c(weight = 4.0, prob = 0.9);
+    }
+
+LootedObject(Seaweeds, 1.0)
+    {
+        use WeaponsSeaweedsarena_c(weight = 1.0, prob = 0.9);
+        use CraftPartsSeaweedsarena_c(weight = 7.0, prob = 0.9);
+    }
+
+LootedObject(Flowers, 1.0)
+    {
+        use CraftPartsFlowersarena_c(weight = 1.0, prob = 0.9);
+    }
+
+LootedObject(Refrigerator, 1.0)
+    {
+        use CraftPartsRefrigeratorarena_c(weight = 4.0, prob = 0.9);
+    }
+
+ LootedObject(ToolBoxFirearms, 1.0)
+    {
+        use WeaponsToolBoxFirearmsarena_c(weight = 1.0, prob = 1.0);
+    }
+
+LootedObject(DeadBody_FatMan, 1.0)
+    {
+        ColorSet(ColorSet_FatMan);
+        use WeaponsDeadBodyarena_c(weight = 0.0, prob = 0.7);
+        use BigCash(weight = 1.5, prob = 0.7);
+        use MediumCash(weight = 5.0, prob = 0.7);
+        use StandardCash(weight = 3.0, prob = 0.7);
+        use StandardAmmo(weight = 0.5, prob = 1.0);
+    }
+
+LootedObject(DeadBody_Ram, 1.0)
+    {
+        ColorSet(ColorSet_Ram);
+        use BigCash(weight = 0.5, prob = 0.7);
+        use MediumCash(weight = 7.0, prob = 0.7);
+        use StandardCash(weight = 2.0, prob = 0.7);
+        use StandardAmmo(weight = 0.5, prob = 1.0);
+    }
+
+LootedObject(DeadBody_Suicider, 1.0)
+    {
+        ColorSet(ColorSet_Suicider);
+        use StandardCash(weight = 9.5, prob = 0.6);
+        use StandardAmmo(weight = 0.5, prob = 1.0);
+        use CraftPartsDeadBody_Suiciderarena_c(weight = 0.0, prob = 0.6);
+        use WeaponsDeadBodyarena_c(weight = 0.0, prob = 0.6);
+    }
+
+LootedObject(DeadBody_Corrupter, 1.0)
+    {
+        ColorSet(ColorSet_Corrupter);
+        use BigCash(weight = 1.5, prob = 0.7);
+        use MediumCash(weight = 6.0, prob = 0.7);
+        use StandardCash(weight = 2.0, prob = 0.7);      
+        use StandardAmmo(weight = 0.5, prob = 1.0);
+        use CraftPartsDeadBody_Corrupterarena_c(weight = 0.0, prob = 0.7);
+    }
+
+LootedObject(DeadBody_MeleeFighter, 1.0)
+    {
+        ColorSet(ColorSet_MeleeFighter);
+        use BigCash(weight = 1.5, prob = 0.7);
+        use MediumCash(weight = 5.0, prob = 0.7);
+        use StandardCash(weight = 3.0, prob = 0.7);
+        use StandardAmmo(weight = 0.5, prob = 1.0);
+    }
+
+LootedObject(DeadBody_Infected, 1.0)
+    {
+        use StandardCash(weight = 7.8, prob = 0.1);
+        use StandardMedKits(weight = 1.5, prob = 1.0);
+        use StandardAmmo(weight = 0.2, prob = 1.0);
+        use WeaponsDeadBodyarena_c(weight = 0.0, prob = 0.9);
+        use CraftPartsDeadBody_Infectedarena_c(weight = 0.0, prob = 0.6);
+    }
+
+LootedObject(DeadBody_Human, 1.0)
+    {
+        use WeaponsDeadBodyarena_c(weight = 0.0, prob = 0.6);
+        use StandardCash(weight = 10.0, prob = 0.6);
+        use CraftPartsDeadBody_Humanarena_c(weight = 0.0, prob = 0.6);
+    }
+}

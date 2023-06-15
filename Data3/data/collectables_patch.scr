@@ -1,0 +1,417 @@
+import "inventorystuff.scr" 
+sub main() 
+{
+
+    Item("zzz_Craftplan_Stungun", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Stungun&");
+        Description('&ColItem_Zzz_Craftplan_Stungun_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("zzz_Firearm_Stungun", "", "");
+        RequiredItem("CraftPart_Lp4000Battery", 1);
+        AdditionalDamageType(DamageType_Impact);
+        AdditionalCriticalProb(1.0);
+        AdditionalCriticalPhysicsDamage(2.5);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+        CraftCreatesBaseItem(true);
+    }
+
+    Item("zzz_Craftplan_BleedBomb", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Bleedbomb&");
+        Description('&ColItem_Zzz_Craftplan_Bleedbomb_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(100);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("zzz_Throwable_Bleedbomb", "", "");
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Bolts", 2);
+        RequiredItem("CraftPart_Nails", 2);
+        RequiredItem("CraftPart_Clamp", 1);
+        AdditionalDamageType(DamageType_Bleeding);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+        CraftCreatesBaseItem(true);
+    }
+
+    Item("zzz_Craftplan_WolvKnuckles", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Wolvknuckles&");
+        Description('&ColItem_Zzz_Craftplan_Wolvknuckles_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_BrassKnucklesSpikedGen", "Weapon_Craft1", "");
+        BaseItem("Melee_BrassKnucklesBadassGen", "Weapon_Craft1", "");
+        BaseItem("Melee_BrassKnucklesBrutalGen", "Weapon_Craft1", "");
+        RequiredItem("CraftPart_Blade", 4);
+        RequiredItem("CraftPart_Bolts", 4);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        AdditionalDamageType(DamageType_Bleeding);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.41);
+        AdditionalDamadeLevel(3);
+        Color(Color_Yellow);
+    }
+
+    Item("zzz_Craftplan_assasinspoison", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Assasinspoison&");
+        Description('&ColItem_Zzz_Craftplan_Assasinspoison_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_BrassKnucklesSpikedGen", "Weapon_Craft1", "");
+        BaseItem("Melee_BrassKnucklesBadassGen", "Weapon_Craft1", "");
+        BaseItem("Melee_BrassKnucklesBrutalGen", "Weapon_Craft1", "");
+        RequiredItem("CraftPart_Oleander", 3);
+        RequiredItem("CraftPart_Detergent", 3);
+        RequiredItem("CraftPart_SuiciderMeat", 2);
+        RequiredItem("CraftPart_LemonJuice", 2);
+        RequiredItem("CraftPart_FlexibleHose", 2);
+        RequiredItem("CraftPart_Blade", 4);
+        RequiredItem("CraftPart_Bolts", 4);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        AdditionalDamageType(DamageType_Poison);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.41);
+        AdditionalDamadeLevel(3);
+        Color(Color_Yellow);
+    }
+
+    Item("zzz_Craftplan_Juggernaut", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Juggernaut&");
+        Description('&ColItem_Zzz_Craftplan_Juggernaut_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("zzz_Melee_KnucklesExoticGen", "", "");
+        RequiredItem("CraftPart_Tape", 3);
+        RequiredItem("CraftPart_Wire", 3);
+        RequiredItem("CraftPart_Phone", 2);
+        RequiredItem("CraftPart_Belt", 2);
+        RequiredItem("CraftPart_Lp4000Battery", 2);
+        AdditionalDamageType(DamageType_Impact);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDamage(0.5);
+        AdditionalCriticalPhysicsDamage(5);
+        AdditionalDamadeLevel(3);
+        Color(Color_Yellow);
+    }
+
+    Item("zzz_Craftplan_PatchAddon01", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Patchaddon01&");
+        Description('&ColItem_Zzz_Craftplan_Patchaddon01_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_Machete", "Weapon_Craft9 Weapon_Craft10", "");
+        BaseItem("Melee_leg_TheMachete", "Weapon_Craft9 Weapon_Craft10", "");
+        BaseItem("Melee_leg_Bushmaster", "Weapon_Craft9 Weapon_Craft10", "");
+        RequiredItem("CraftPart_Tape", 2);
+        RequiredItem("CraftPart_Wire", 2);
+        RequiredItem("CraftPart_BatteryLarge", 2);
+        RequiredItem("CraftPart_Belt", 1);
+        RequiredItem("CraftPart_BatteryLarge", 1);
+        RequiredItem("CraftPart_Lp4000Battery", 1);
+        AdditionalDamageType(DamageType_Fire);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.1);
+        AdditionalCriticalDuration(0.0);
+        AdditionalCriticalDamage(1.0);
+        AdditionalDamadeLevel(4);
+        Color(Color_Violet);
+    }
+
+    Item("zzz_Craftplan_PatchAddon02", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Patchaddon02&");
+        Description('&ColItem_Zzz_Craftplan_Patchaddon02_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1500);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_KanaboMetalGen", "Weapon_Craft3 Weapon_Craft7", "");
+        RequiredItem("CraftPart_Tape", 3);
+        RequiredItem("CraftPart_Wire", 3);
+        RequiredItem("CraftPart_BatteryLarge", 2);
+        RequiredItem("CraftPart_Lp4000Battery", 1);
+        RequiredItem("CraftPart_ElectronicScrap", 2);
+        RequiredItem("CraftPart_Blade", 2);
+        RequiredItem("CraftPart_Bolts", 3);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        AdditionalDamageType(DamageType_Impact);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.1);
+        AdditionalCriticalDamage(1.0);
+        AdditionalCriticalPhysicsDamage(5);
+        AdditionalDamadeLevel(5);
+        Color(Color_Orange);
+    }
+
+    Item("zzz_Craftplan_PatchAddon03", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Patchaddon03&");
+        Description('&ColItem_Zzz_Craftplan_Patchaddon03_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_KanaboGen", "Weapon_Craft1 Weapon_Craft4 Weapon_Craft7", "");
+        RequiredItem("CraftPart_Tape", 3);
+        RequiredItem("CraftPart_Wire", 3);
+        RequiredItem("CraftPart_BatteryLarge", 2);
+        RequiredItem("CraftPart_Phone", 2);
+        RequiredItem("CraftPart_ElectronicScrap", 2);
+        RequiredItem("CraftPart_BarbedWire", 2);
+        RequiredItem("CraftPart_Nails", 2);
+        AdditionalDamageType(DamageType_Bleeding);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.08);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.5);
+        AdditionalDamadeLevel(4);
+        Color(Color_Violet);
+    }
+
+    Item("zzz_Craftplan_PatchAddon04", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Patchaddon04&");
+        Description('&ColItem_Zzz_Craftplan_Patchaddon04_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_PickaxeGen", "Weapon_Craft3 Weapon_Craft6", "");
+        RequiredItem("CraftPart_Tape", 2);
+        RequiredItem("CraftPart_Wire", 2);
+        RequiredItem("CraftPart_Battery", 3);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_WeightPlate", 1);
+        RequiredItem("CraftPart_Gear", 1);
+        RequiredItem("CraftPart_Clamp", 2);
+        AdditionalDamageType(DamageType_Impact);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.08);
+        AdditionalCriticalDamage(0.5);
+        AdditionalCriticalPhysicsDamage(3.5);
+        AdditionalDamadeLevel(3);
+        Color(Color_Yellow);
+    }
+
+    Item("zzz_Craftplan_PatchAddon05", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Patchaddon05&");
+        Description('&ColItem_Zzz_Craftplan_Patchaddon05_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_SledgeHammerMaulGen", "Weapon_Craft4 Weapon_Craft8", "");
+        RequiredItem("CraftPart_Tape", 2);
+        RequiredItem("CraftPart_Wire", 2);
+        RequiredItem("CraftPart_Battery", 3);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_WeightPlate", 1);
+        RequiredItem("CraftPart_Gear", 1);
+        RequiredItem("CraftPart_Clamp", 2);
+        AdditionalDamageType(DamageType_Impact);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.08);
+        AdditionalCriticalDamage(0.5);
+        AdditionalCriticalPhysicsDamage(3.5);
+        AdditionalDamadeLevel(3);
+        Color(Color_Yellow);
+    }
+
+    Item("zzz_Craftplan_PatchAddon06", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Patchaddon06&");
+        Description('&ColItem_Zzz_Craftplan_Patchaddon06_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_HammerHeavyGen", "Weapon_Craft2 Weapon_Craft5", "");
+        RequiredItem("CraftPart_Tape", 2);
+        RequiredItem("CraftPart_Wire", 2);
+        RequiredItem("CraftPart_Battery", 3);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_WeightPlate", 1);
+        RequiredItem("CraftPart_Gear", 1);
+        RequiredItem("CraftPart_Clamp", 2);
+        AdditionalDamageType(DamageType_Impact);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.08);
+        AdditionalCriticalDamage(0.5);
+        AdditionalCriticalPhysicsDamage(3.5);
+        AdditionalDamadeLevel(3);
+        Color(Color_Yellow);
+    }
+
+    Item("zzz_Craftplan_PatchAddon07", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Patchaddon07&");
+        Description('&ColItem_Zzz_Craftplan_Patchaddon07_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_CrowbarGen", "Weapon_Craft3 Weapon_Craft5", "");
+        RequiredItem("CraftPart_Tape", 3);
+        RequiredItem("CraftPart_Wire", 3);
+        RequiredItem("CraftPart_BatteryLarge", 3);
+        RequiredItem("CraftPart_Phone", 2);
+        RequiredItem("CraftPart_Belt", 2);
+        RequiredItem("CraftPart_WeightPlate", 2);
+        RequiredItem("CraftPart_Bolts", 2);
+        AdditionalDamageType(DamageType_Impact);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.08);
+        AdditionalCriticalDamage(0.75);
+        AdditionalCriticalPhysicsDamage(5);
+        AdditionalDamadeLevel(4);
+        Color(Color_Violet);
+    }
+
+    Item("zzz_Craftplan_PatchAddon08", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Patchaddon08&");
+        Description('&ColItem_Zzz_Craftplan_Patchaddon08_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_PoliceBatonGen", "Weapon_Craft4 Weapon_Craft5 Weapon_Craft6", "");
+        BaseItem("Melee_MetalBatonGen", "Weapon_Craft4 Weapon_Craft5 Weapon_Craft6", "");
+        BaseItem("Melee_HeavyBatonGen", "Weapon_Craft4 Weapon_Craft5 Weapon_Craft6", "");
+        RequiredItem("CraftPart_Tape", 3);
+        RequiredItem("CraftPart_Wire", 3);
+        RequiredItem("CraftPart_BatteryLarge", 2);
+        RequiredItem("CraftPart_Phone", 2);
+        RequiredItem("CraftPart_ElectronicScrap", 2);
+        RequiredItem("CraftPart_Glue", 2);
+        RequiredItem("CraftPart_Rag", 2);
+        AdditionalDamageType(DamageType_Bleeding);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.08);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.5);
+        AdditionalDamadeLevel(4);
+        Color(Color_Violet);
+    }
+
+    Item("zzz_Craftplan_PatchAddon09", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Patchaddon09&");
+        Description('&ColItem_Zzz_Craftplan_Patchaddon09_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_TonfaGen", "Weapon_Craft1 Weapon_Craft3", "");
+        RequiredItem("CraftPart_Tape", 3);
+        RequiredItem("CraftPart_Wire", 3);
+        RequiredItem("CraftPart_BatteryLarge", 2);
+        RequiredItem("CraftPart_Phone", 2);
+        RequiredItem("CraftPart_ElectronicScrap", 2);
+        RequiredItem("CraftPart_Nails", 2);
+        RequiredItem("CraftPart_Clamp", 2);
+        AdditionalDamageType(DamageType_Electric);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.08);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.41);
+        AdditionalDamadeLevel(3);
+        Color(Color_Yellow);
+    }
+
+    Item("zzz_Craftplan_PatchAddon10", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Patchaddon10&");
+        Description('&ColItem_Zzz_Craftplan_Patchaddon10_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_MetalBaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft8 Weapon_Craft10");
+        RequiredItem("CraftPart_Blade", 2);
+        RequiredItem("CraftPart_Bolts", 3);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_BarbedWire", 2);
+        AdditionalDamageType(DamageType_Bleeding);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.08);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.41);
+        AdditionalDamadeLevel(3);
+        Color(Color_Yellow);
+    }
+
+    Item("zzz_Craftplan_PatchAddon11", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Patchaddon11&");
+        Description('&ColItem_Zzz_Craftplan_Patchaddon11_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_BaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft9");
+        BaseItem("Melee_BaseballBatBigGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft9");
+        RequiredItem("CraftPart_CircularBlade", 1);
+        RequiredItem("CraftPart_Bolts", 2);
+        RequiredItem("CraftPart_SteelRod", 1);
+        RequiredItem("CraftPart_Clamp", 2);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Glue", 2);
+        RequiredItem("CraftPart_Rag", 2);
+        AdditionalDamageType(DamageType_Bleeding);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.1);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.75);
+        AdditionalDamadeLevel(5);
+        Color(Color_Orange);
+    }
+
+    Item("zzz_Craftplan_PatchAddon12", CategoryType_Collectable)
+    {
+        Name("&ColItem_Zzz_Craftplan_Patchaddon12&");
+        Description('&ColItem_Zzz_Craftplan_Patchaddon12_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_MaceHeavyStarGen", "Weapon_Craft5 Weapon_Craft7", "");
+        RequiredItem("CraftPart_Tape", 3);
+        RequiredItem("CraftPart_Wire", 3);
+        RequiredItem("CraftPart_BatteryLarge", 2);
+        RequiredItem("CraftPart_Magnet", 2);
+        RequiredItem("CraftPart_ElectronicScrap", 2);
+        RequiredItem("CraftPart_BarbedWire", 2);
+        RequiredItem("CraftPart_Lp4000Battery", 1);
+        AdditionalDamageType(DamageType_Electric);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.1);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.75);
+        AdditionalDamadeLevel(5);
+        Color(Color_Orange);
+    }
+}

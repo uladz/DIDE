@@ -1,0 +1,3013 @@
+import "inventorystuff.scr" 
+sub main() 
+{
+
+    Item("Craftplan_Shockcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Shockcraft&");
+        Description('&ColItem_Craftplan_Shockcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_Sickle", "Weapon_Craft2", "");
+        BaseItem("Melee_Machete", "Weapon_Craft1", "");
+        BaseItem("Melee_Axe", "Weapon_Craft1", "");
+        BaseItem("Melee_BigAxe", "Weapon_Craft1", "");
+        BaseItem("Melee_Wakizashi", "Weapon_Craft1", "");
+        BaseItem("Melee_Katana", "Weapon_Craft1", "");
+        BaseItem("Melee_TantoGen", "Weapon_Craft1", "");
+        BaseItem("Melee_CaneKnifeGen", "Weapon_Craft1", "");
+        BaseItem("Melee_CaneKnifeSugarGen", "Weapon_Craft1", "");
+        BaseItem("Melee_CaneKnifeExoticGen", "Weapon_Craft1", "");
+        BaseItem("Melee_leg_Zedsdemise", "Weapon_Craft1", "");
+        BaseItem("Melee_leg_TheMachete", "Weapon_Craft1", "");
+        BaseItem("Melee_leg_VikingOfTheSouth", "Weapon_Craft1", "");
+        BaseItem("Melee_leg_Bushmaster", "Weapon_Craft1", "");
+        BaseItem("Melee_leg_Banisher", "Weapon_Craft1", "");
+        BaseItem("Melee_leg_Eviscerator", "Weapon_Craft1", "");
+        RequiredItem("CraftPart_Tape", 2);
+        RequiredItem("CraftPart_Wire", 2);
+        RequiredItem("CraftPart_Battery", 2);
+        NamePrefix("&CraftElectricPrefixName&");
+        AdditionalDamageType(DamageType_Electric);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Highvoltagecraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Highvoltagecraft&");
+        Description('&ColItem_Craftplan_Highvoltagecraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(400);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_Sickle", "Weapon_Craft3", "");
+        BaseItem("Melee_Machete", "Weapon_Craft2", "");
+        BaseItem("Melee_Axe", "Weapon_Craft2", "");
+        BaseItem("Melee_BigAxe", "Weapon_Craft2", "");
+        BaseItem("Melee_Wakizashi", "Weapon_Craft2", "");
+        BaseItem("Melee_Katana", "Weapon_Craft2", "");
+        BaseItem("Melee_TantoGen", "Weapon_Craft3", "");
+        BaseItem("Melee_CaneKnifeGen", "Weapon_Craft2", "");
+        BaseItem("Melee_CaneKnifeSugarGen", "Weapon_Craft2", "");
+        BaseItem("Melee_CaneKnifeExoticGen", "Weapon_Craft2", "");
+        BaseItem("Melee_leg_Zedsdemise", "Weapon_Craft2", "");
+        BaseItem("Melee_leg_TheMachete", "Weapon_Craft2", "");
+        BaseItem("Melee_leg_VikingOfTheSouth", "Weapon_Craft2", "");
+        BaseItem("Melee_leg_Bushmaster", "Weapon_Craft2", "");
+        BaseItem("Melee_leg_Banisher", "Weapon_Craft2", "");
+        BaseItem("Melee_leg_Eviscerator", "Weapon_Craft2", "");
+        RequiredItem("CraftPart_Tape", 2);
+        RequiredItem("CraftPart_Wire", 2);
+        RequiredItem("CraftPart_Battery", 3);
+        RequiredItem("CraftPart_ElectronicScrap", 2);
+        NamePrefix("&CraftHighVoltagePrefixName&");
+        AdditionalDamageType(DamageType_Electric);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.33);
+        PropagateProb(0.1);
+        AdditionalDamadeLevel(2);
+        Color(Color_Green);
+    }
+
+    Item("Craftplan_Short-Circuitcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Short-Circuitcraft&");
+        Description('&ColItem_Craftplan_Short-Circuitcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_Sickle", "Weapon_Craft4", "");
+        BaseItem("Melee_Machete", "Weapon_Craft3", "");
+        BaseItem("Melee_Axe", "Weapon_Craft3", "");
+        BaseItem("Melee_BigAxe", "Weapon_Craft3", "");
+        BaseItem("Melee_Wakizashi", "Weapon_Craft3", "");
+        BaseItem("Melee_Katana", "Weapon_Craft3", "");
+        BaseItem("Melee_TantoGen", "Weapon_Craft4", "");
+        BaseItem("Melee_CaneKnifeGen", "Weapon_Craft4", "");
+        BaseItem("Melee_CaneKnifeSugarGen", "Weapon_Craft4", "");
+        BaseItem("Melee_CaneKnifeExoticGen", "Weapon_Craft4", "");
+        BaseItem("Melee_leg_Zedsdemise", "Weapon_Craft3", "");
+        BaseItem("Melee_leg_TheMachete", "Weapon_Craft3", "");
+        BaseItem("Melee_leg_VikingOfTheSouth", "Weapon_Craft3", "");
+        BaseItem("Melee_leg_Bushmaster", "Weapon_Craft3", "");
+        BaseItem("Melee_leg_Banisher", "Weapon_Craft3", "");
+        BaseItem("Melee_leg_Eviscerator", "Weapon_Craft3", "");
+        RequiredItem("CraftPart_Tape", 3);
+        RequiredItem("CraftPart_Wire", 3);
+        RequiredItem("CraftPart_BatteryLarge", 2);
+        RequiredItem("CraftPart_Magnet", 2);
+        RequiredItem("CraftPart_ElectronicScrap", 2);
+        NamePrefix("&CraftShortCircuitPrefixName&");
+        AdditionalDamageType(DamageType_Electric);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.41);
+        DeathEffect(1);
+        PropagateProb(0.15);
+        AdditionalDamadeLevel(3);
+        Color(Color_Yellow);
+    }
+
+    Item("Craftplan_Oldsmokycraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Oldsmokycraft&");
+        Description('&ColItem_Craftplan_Oldsmokycraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_Machete", "Weapon_Craft10", "");
+        BaseItem("Melee_leg_TheMachete", "Weapon_Craft10", "");
+        BaseItem("Melee_leg_Bushmaster", "Weapon_Craft10", "");
+        RequiredItem("CraftPart_Tape", 3);
+        RequiredItem("CraftPart_Wire", 3);
+        RequiredItem("CraftPart_Lp4000Battery", 1);
+        RequiredItem("CraftPart_Magnet", 2);
+        RequiredItem("CraftPart_Belt", 2);
+        RequiredItem("CraftPart_Blade", 2);
+        NamePrefix("&CraftOldSmokyPrefixName&");
+        AdditionalDamageType(DamageType_Electric);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.06);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.5);
+        DeathEffect(0);
+        PropagateProb(0.2);
+        AdditionalDamadeLevel(4);
+        Color(Color_Violet);
+    }
+
+    Item("Craftplan_Paralysingcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Paralysingcraft&");
+        Description('&ColItem_Craftplan_Paralysingcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_Sickle", "", "");
+        BaseItem("Melee_Machete", "", "");
+        BaseItem("Melee_Axe", "", "");
+        BaseItem("Melee_BigAxe", "", "");
+        BaseItem("Melee_Knife", "", "");
+        BaseItem("Melee_Cleaver", "", "");
+        BaseItem("Melee_TantoGen", "", "");
+        BaseItem("Melee_Wakizashi", "", "");
+        BaseItem("Melee_Katana", "", "");
+        BaseItem("Melee_DoubleBlade", "", "");
+        BaseItem("Melee_ReaperGen", "", "");
+        BaseItem("Melee_leg_TheMachete", "", "");
+        BaseItem("Melee_leg_Zedsdemise", "", "");
+        BaseItem("Melee_leg_VikingOfTheSouth", "", "");
+        BaseItem("Melee_leg_MasterChef", "", "");
+        BaseItem("Melee_leg_Bushmaster", "", "");
+        BaseItem("Melee_leg_Banisher", "", "");
+        BaseItem("Melee_leg_Eviscerator", "", "");
+        BaseItem("Melee_leg_AssassinsGreed", "", "");
+        RequiredItem("CraftPart_Oleander", 2);
+        RequiredItem("CraftPart_Detergent", 2);
+        NamePrefix("&CraftParalysingPrefixName&");
+        AdditionalDamageType(DamageType_Poison);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Poisoncraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Poisoncraft&");
+        Description('&ColItem_Craftplan_Poisoncraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(400);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_Sickle", "", "");
+        BaseItem("Melee_Machete", "", "");
+        BaseItem("Melee_Axe", "", "");
+        BaseItem("Melee_BigAxe", "", "");
+        BaseItem("Melee_Knife", "", "");
+        BaseItem("Melee_Cleaver", "", "");
+        BaseItem("Melee_TantoGen", "", "");
+        BaseItem("Melee_Wakizashi", "", "");
+        BaseItem("Melee_Katana", "", "");
+        BaseItem("Melee_DoubleBlade", "", "");
+        BaseItem("Melee_ReaperGen", "", "");
+        BaseItem("Melee_leg_TheMachete", "", "");
+        BaseItem("Melee_leg_Zedsdemise", "", "");
+        BaseItem("Melee_leg_VikingOfTheSouth", "", "");
+        BaseItem("Melee_leg_MasterChef", "", "");
+        BaseItem("Melee_leg_Bushmaster", "", "");
+        BaseItem("Melee_leg_Banisher", "", "");
+        BaseItem("Melee_leg_Eviscerator", "", "");
+        BaseItem("Melee_leg_AssassinsGreed", "", "");
+        RequiredItem("CraftPart_Oleander", 2);
+        RequiredItem("CraftPart_Detergent", 2);
+        RequiredItem("CraftPart_Algae", 2);
+        RequiredItem("CraftPart_FlexibleHose", 2);
+        NamePrefix("&CraftPoisonPrefixName&");
+        AdditionalDamageType(DamageType_Poison);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.33);
+        PropagateProb(0.1);
+        AdditionalDamadeLevel(2);
+        Color(Color_Green);
+    }
+
+    Item("Craftplan_Poisonspreadcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Poisonspreadcraft&");
+        Description('&ColItem_Craftplan_Poisonspreadcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_Sickle", "", "");
+        BaseItem("Melee_Machete", "", "");
+        BaseItem("Melee_Axe", "", "");
+        BaseItem("Melee_BigAxe", "", "");
+        BaseItem("Melee_Knife", "", "");
+        BaseItem("Melee_Cleaver", "", "");
+        BaseItem("Melee_TantoGen", "", "");
+        BaseItem("Melee_Wakizashi", "", "");
+        BaseItem("Melee_Katana", "", "");
+        BaseItem("Melee_DoubleBlade", "", "");
+        BaseItem("Melee_ReaperGen", "", "");
+        BaseItem("Melee_leg_TheMachete", "", "");
+        BaseItem("Melee_leg_Zedsdemise", "", "");
+        BaseItem("Melee_leg_VikingOfTheSouth", "", "");
+        BaseItem("Melee_leg_MasterChef", "", "");
+        BaseItem("Melee_leg_Bushmaster", "", "");
+        BaseItem("Melee_leg_Banisher", "", "");
+        BaseItem("Melee_leg_Eviscerator", "", "");
+        BaseItem("Melee_leg_AssassinsGreed", "", "");
+        RequiredItem("CraftPart_Oleander", 3);
+        RequiredItem("CraftPart_Detergent", 3);
+        RequiredItem("CraftPart_SuiciderMeat", 2);
+        RequiredItem("CraftPart_LemonJuice", 2);
+        RequiredItem("CraftPart_FlexibleHose", 2);
+        NamePrefix("&CraftPoisonSpreadName&");
+        AdditionalDamageType(DamageType_Poison);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.41);
+        PropagateProb(0.15);
+        AdditionalDamadeLevel(3);
+        Color(Color_Yellow);
+    }
+
+    Item("Craftplan_Poisonx4", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Poisonx4&");
+        Description('&ColItem_Craftplan_Poisonx4_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_Sickle", "", "");
+        BaseItem("Melee_Machete", "", "");
+        BaseItem("Melee_Axe", "", "");
+        BaseItem("Melee_BigAxe", "", "");
+        BaseItem("Melee_Knife", "", "");
+        BaseItem("Melee_Cleaver", "", "");
+        BaseItem("Melee_TantoGen", "", "");
+        BaseItem("Melee_Wakizashi", "", "");
+        BaseItem("Melee_Katana", "", "");
+        BaseItem("Melee_DoubleBlade", "", "");
+        BaseItem("Melee_ReaperGen", "", "");
+        BaseItem("Melee_leg_TheMachete", "", "");
+        BaseItem("Melee_leg_Zedsdemise", "", "");
+        BaseItem("Melee_leg_VikingOfTheSouth", "", "");
+        BaseItem("Melee_leg_MasterChef", "", "");
+        BaseItem("Melee_leg_Bushmaster", "", "");
+        BaseItem("Melee_leg_Banisher", "", "");
+        BaseItem("Melee_leg_Eviscerator", "", "");
+        BaseItem("Melee_leg_AssassinsGreed", "", "");
+        RequiredItem("CraftPart_Oleander", 3);
+        RequiredItem("CraftPart_Detergent", 3);
+        RequiredItem("CraftPart_DrawnedMeat", 2);
+        RequiredItem("CraftPart_Soap", 2);
+        RequiredItem("CraftPart_FlexibleHose", 2);
+        RequiredItem("CraftPart_StingrayTail", 1);
+        NamePrefix("&CraftPoisonX4Name&");
+        AdditionalDamageType(DamageType_Poison);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.06);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.5);
+        PropagateProb(0.2);
+        AdditionalDamadeLevel(4);
+        Color(Color_Violet);
+    }
+
+    Item("Craftplan_Deobombcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Deobombcraft&");
+        Description('&ColItem_Craftplan_Deobombcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(50);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Throwable_DeoBomb", "", "");
+        RequiredItem("CraftPart_Deodorant", 2);
+        RequiredItem("CraftPart_Tape", 1);
+        AdditionalCriticalPhysicsDamage(70.0);
+        AdditionalDamadeLevel(2);
+        Color(Color_Green);
+        CraftCreatesBaseItem(true);
+    }
+
+    Item("Craftplan_Stickybombcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Stickybombcraft&");
+        Description('&ColItem_Craftplan_Stickybombcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(50);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_KnifeHomemadeGen", "Weapon_Craft1", "");
+        BaseItem("Melee_KnifeGen", "Weapon_Craft1", "");
+        BaseItem("Melee_KnifeKitchenGen", "Weapon_Craft1", "");
+        BaseItem("Melee_KnifeWickedGen", "Weapon_Craft1", "");
+        BaseItem("Melee_KnifeDivingGen", "Weapon_Craft1", "");
+        BaseItem("Melee_KnifeMilitaryGen", "Weapon_Craft1", "");
+        BaseItem("Melee_leg_AssassinsGreed", "Weapon_Craft1", "");
+        RequiredItem("CraftPart_Detergent", 1);
+        RequiredItem("CraftPart_Wire", 1);
+        RequiredItem("CraftPart_Tape", 1);
+        RequiredItem("CraftPart_Watch", 1);
+        NamePrefix("&CraftBlastPrefixName&");
+        AdditionalDamageType(DamageType_Blast);
+        AdditionalDamage(5000.0);
+        AdditionalBlastRange(3.0);    // Converted
+        AdditionalCriticalPhysicsDamage(70.0);
+        AdditionalDamadeLevel(2);
+        Color(Color_Green);
+    }
+
+    Item("Craftplan_Meatcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Meatcraft&");
+        Description('&ColItem_Craftplan_Meatcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(50);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Throwable_MeatJar", "", "");
+        RequiredItem("CraftPart_Meat", 3);
+        RequiredItem("CraftPart_Tape", 1);
+        AdditionalBlastRange(10.0);    // Converted
+        AdditionalDamadeLevel(2);
+        Color(Color_Green);
+        CraftCreatesBaseItem(true);
+        PresentInDLC(3);
+    }
+
+    Item("Craftplan_Molotovcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Molotovcraft&");
+        Description('&ColItem_Craftplan_Molotovcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(50);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Throwable_Molotov", "", "");
+        RequiredItem("Powerup_Alcohol", 2);
+        RequiredItem("CraftPart_Rag", 1);
+        Color(Color_Green);
+        CraftCreatesBaseItem(true);
+    }
+
+    Item("Craftplan_Impactcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Impactcraft&");
+        Description('&ColItem_Craftplan_Impactcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_HammerGen", "Weapon_Craft4", "");
+        BaseItem("Melee_HammerNailGen", "Weapon_Craft1", "");
+        BaseItem("Melee_HammerHeavyGen", "Weapon_Craft1", "");
+        BaseItem("Melee_PoliceBatonGen", "Weapon_Craft2", "");
+        BaseItem("Melee_MetalBatonGen", "Weapon_Craft2", "");
+        BaseItem("Melee_HeavyBatonGen", "Weapon_Craft2", "");
+        BaseItem("Melee_BaseballBatGen", "", "Weapon_Craft1 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_BaseballBatBigGen", "", "Weapon_Craft1 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_MetalBaseballBatGen", "", "Weapon_Craft1 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_StickGen", "Weapon_Craft2", "");
+        BaseItem("Melee_WoodenBatonGen", "Weapon_Craft2", "");
+        BaseItem("Melee_TonfaGen", "Weapon_Craft2", "");
+        BaseItem("Melee_WrenchGen", "Weapon_Craft1", "");
+        BaseItem("Melee_HeavyWrenchGen", "Weapon_Craft1", "");
+        BaseItem("Melee_PickaxeGen", "Weapon_Craft1", "");
+        BaseItem("Melee_MaceGen", "Weapon_Craft3", "");
+        BaseItem("Melee_MaceCudgelGen", "Weapon_Craft3", "");
+        BaseItem("Melee_MaceMorningStarGen", "Weapon_Craft3", "");
+        BaseItem("Melee_MaceFlangedGen", "Weapon_Craft3", "");
+        BaseItem("Melee_MaceHeavyStarGen", "Weapon_Craft3", "");
+        BaseItem("Melee_MaceExoticGen", "Weapon_Craft3", "");
+        BaseItem("Melee_leg_Italianplumber", "Weapon_Craft1", "");
+        BaseItem("Melee_leg_PickOfDestiny", "Weapon_Craft1", "");
+        BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft1 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_Ban", "Weapon_Craft1", "");
+        BaseItem("Melee_leg_M.C.", "Weapon_Craft1", "");
+        BaseItem("Melee_leg_BouncersPal", "", "Weapon_Craft1 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        RequiredItem("CraftPart_Tape", 2);
+        RequiredItem("CraftPart_Wire", 2);
+        RequiredItem("CraftPart_Battery", 2);
+        NamePrefix("&CraftImpactPrefixName&");
+        AdditionalDamageType(DamageType_Impact);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDamage(0.33);
+        AdditionalCriticalPhysicsDamage(2.25);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Lightingcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Lightingcraft&");
+        Description('&ColItem_Craftplan_Lightingcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(400);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_HammerGen", "Weapon_Craft2", "");
+        BaseItem("Melee_HammerNailGen", "Weapon_Craft2", "");
+        BaseItem("Melee_HammerHeavyGen", "Weapon_Craft2", "");
+        BaseItem("Melee_PoliceBatonGen", "Weapon_Craft3", "");
+        BaseItem("Melee_MetalBatonGen", "Weapon_Craft3", "");
+        BaseItem("Melee_HeavyBatonGen", "Weapon_Craft3", "");
+        BaseItem("Melee_BaseballBatGen", "", "Weapon_Craft1 weapon_craft2 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
+        BaseItem("Melee_BaseballBatBigGen", "", "Weapon_Craft1 weapon_craft2 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
+        BaseItem("Melee_MetalBaseballBatGen", "", "Weapon_Craft1 weapon_craft2 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
+        BaseItem("Melee_StickGen", "Weapon_Craft3", "");
+        BaseItem("Melee_WoodenBatonGen", "Weapon_Craft3", "");
+        BaseItem("Melee_TonfaGen", "Weapon_Craft3", "");
+        BaseItem("Melee_WrenchGen", "Weapon_Craft2", "");
+        BaseItem("Melee_HeavyWrenchGen", "Weapon_Craft2", "");
+        BaseItem("Melee_SledgeHammerGen", "Weapon_Craft2", "");
+        BaseItem("Melee_SledgeHammerConstGen", "Weapon_Craft2", "");
+        BaseItem("Melee_SledgeHammerMaulGen", "Weapon_Craft2", "");
+        BaseItem("Melee_PickaxeGen", "Weapon_Craft2", "");
+        BaseItem("Melee_CrowbarGen", "Weapon_Craft2", "");
+        BaseItem("Melee_MaceGen", "Weapon_Craft4", "");
+        BaseItem("Melee_MaceCudgelGen", "Weapon_Craft4", "");
+        BaseItem("Melee_MaceMorningStarGen", "Weapon_Craft4", "");
+        BaseItem("Melee_MaceFlangedGen", "Weapon_Craft4", "");
+        BaseItem("Melee_MaceHeavyStarGen", "Weapon_Craft4", "");
+        BaseItem("Melee_MaceExoticGen", "Weapon_Craft4", "");
+        BaseItem("Melee_KanaboGen", "Weapon_Craft3", "");
+        BaseItem("Melee_KanaboMetalGen", "Weapon_Craft2", "");
+        BaseItem("Melee_leg_Italianplumber", "Weapon_Craft2", "");
+        BaseItem("Melee_leg_GabrielsSledgeHammer", "Weapon_Craft2", "");
+        BaseItem("Melee_leg_PickOfDestiny", "Weapon_Craft2", "");
+        BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft1 weapon_craft2 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 weapon_craft2 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
+        BaseItem("Melee_leg_Ban", "Weapon_Craft2", "");
+        BaseItem("Melee_leg_M.C.", "Weapon_Craft2", "");
+        BaseItem("Melee_leg_BouncersPal", "", "Weapon_Craft1 weapon_craft2 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
+        RequiredItem("CraftPart_Tape", 2);
+        RequiredItem("CraftPart_Wire", 2);
+        RequiredItem("CraftPart_Battery", 3);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        NamePrefix("&CraftLightingPrefixName&");
+        AdditionalDamageType(DamageType_Impact);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDamage(0.41);
+        AdditionalCriticalPhysicsDamage(3);
+        AdditionalDamadeLevel(2);
+        Color(Color_Green);
+    }
+
+    Item("Craftplan_Magicwandcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Magicwandcraft&");
+        Description('&ColItem_Craftplan_Magicwandcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_PoliceBatonGen", "Weapon_Craft4", "");
+        BaseItem("Melee_MetalBatonGen", "Weapon_Craft4", "");
+        BaseItem("Melee_HeavyBatonGen", "Weapon_Craft4", "");
+        BaseItem("Melee_SledgeHammerGen", "Weapon_Craft3", "");
+        BaseItem("Melee_SledgeHammerConstGen", "Weapon_Craft3", "");
+        BaseItem("Melee_SledgeHammerMaulGen", "Weapon_Craft3", "");
+        BaseItem("Melee_PickaxeGen", "Weapon_Craft3", "");
+        BaseItem("Melee_CrowbarGen", "Weapon_Craft3", "");
+        BaseItem("Melee_MaceGen", "Weapon_Craft5", "");
+        BaseItem("Melee_MaceCudgelGen", "Weapon_Craft5", "");
+        BaseItem("Melee_MaceMorningStarGen", "Weapon_Craft5", "");
+        BaseItem("Melee_MaceFlangedGen", "Weapon_Craft5", "");
+        BaseItem("Melee_MaceHeavyStarGen", "Weapon_Craft5", "");
+        BaseItem("Melee_MaceExoticGen", "Weapon_Craft5", "");
+        BaseItem("Melee_KanaboGen", "Weapon_Craft4", "");
+        BaseItem("Melee_KanaboMetalGen", "Weapon_Craft3", "");
+        BaseItem("Melee_leg_GabrielsSledgeHammer", "Weapon_Craft3", "");
+        BaseItem("Melee_leg_PickOfDestiny", "Weapon_Craft3", "");
+        RequiredItem("CraftPart_Tape", 3);
+        RequiredItem("CraftPart_Wire", 3);
+        RequiredItem("CraftPart_BatteryLarge", 2);
+        RequiredItem("CraftPart_Phone", 2);
+        RequiredItem("CraftPart_ElectronicScrap", 2);
+        NamePrefix("&CraftMagicWandPrefixName&");
+        AdditionalDamageType(DamageType_Impact);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDamage(0.5);
+        AdditionalCriticalPhysicsDamage(3.5);
+        AdditionalDamadeLevel(3);
+        Color(Color_Yellow);
+    }
+
+    Item("Craftplan_Teslacraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Teslacraft&");
+        Description('&ColItem_Craftplan_Teslacraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_SledgeHammerGen", "Weapon_Craft10", "");
+        BaseItem("Melee_SledgeHammerConstGen", "Weapon_Craft10", "");
+        BaseItem("Melee_SledgeHammerMaulGen", "Weapon_Craft10", "");
+        BaseItem("Melee_leg_GabrielsSledgeHammer", "Weapon_Craft10", "");
+        RequiredItem("CraftPart_Tape", 3);
+        RequiredItem("CraftPart_Wire", 3);
+        RequiredItem("CraftPart_BatteryLarge", 3);
+        RequiredItem("CraftPart_Phone", 2);
+        RequiredItem("CraftPart_Belt", 2);
+        RequiredItem("CraftPart_EngineParts", 1);
+        NamePrefix("&CraftTeslaPrefixName&");
+        AdditionalDamageType(DamageType_Impact);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.06);
+        AdditionalCriticalDamage(0.75);
+        AdditionalCriticalPhysicsDamage(5);
+        AdditionalDamadeLevel(4);
+        Color(Color_Violet);
+    }
+
+    Item("Craftplan_Torchcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Torchcraft&");
+        Description('&ColItem_Craftplan_Torchcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(400);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_PoliceBatonGen", "", "");
+        BaseItem("Melee_MetalBatonGen", "", "");
+        BaseItem("Melee_HeavyBatonGen", "", "");
+        BaseItem("Melee_BaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_BaseballBatBigGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_MetalBaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
+        BaseItem("Melee_StickGen", "Weapon_Craft4", "");
+        BaseItem("Melee_WoodenBatonGen", "Weapon_Craft4", "");
+        BaseItem("Melee_TonfaGen", "Weapon_Craft4", "");
+        BaseItem("Melee_MaceCudgelGen", "Weapon_Craft6", "");
+        BaseItem("Melee_MaceExoticGen", "Weapon_Craft6", "");
+        BaseItem("Melee_KanaboGen", "Weapon_Craft5", "");
+        BaseItem("Melee_KanaboMetalGen", "Weapon_Craft4", "");
+        BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_BouncersPal", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        RequiredItem("CraftPart_Rag", 2);
+        RequiredItem("CraftPart_Glue", 2);
+        RequiredItem("CraftPart_GasForLighter", 2);
+        NamePrefix("&CraftFirePrefixName&");
+        AdditionalDamageType(DamageType_Fire);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Phoenixcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Phoenixcraft&");
+        Description('&ColItem_Craftplan_Phoenixcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_BigAxeSplittingGen", "Weapon_Craft10", "");
+        BaseItem("Melee_BigAxeUniversalGen", "Weapon_Craft10", "");
+        BaseItem("Melee_BigAxeFireGen", "Weapon_Craft10", "");
+        BaseItem("Melee_leg_VikingOfTheSouth", "Weapon_Craft10", "");
+        RequiredItem("CraftPart_BarbedWire", 1);
+        RequiredItem("CraftPart_Wire", 2);
+        RequiredItem("CraftPart_BatteryLarge", 2);
+        RequiredItem("CraftPart_SteelRod", 2);
+        RequiredItem("CraftPart_Belt", 1);
+        RequiredItem("CraftPart_Tape", 3);
+        RequiredItem("CraftPart_Flares", 1);
+        NamePrefix("&CraftPhoenixPrefixName&");
+        AdditionalDamageType(DamageType_Fire);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.06);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.5);
+        PropagateProb(0.2);
+        AdditionalDamadeLevel(2);
+        Color(Color_Green);
+    }
+
+    Item("Craftplan_Naildcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Naildcraft&");
+        Description('&ColItem_Craftplan_Naildcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_BaseballBatGen", "", "Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_BaseballBatBigGen", "", "Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_StickGen", "Weapon_Craft1", "");
+        BaseItem("Melee_WoodenBatonGen", "Weapon_Craft1", "");
+        BaseItem("Melee_TonfaGen", "Weapon_Craft1", "");
+        BaseItem("Melee_MaceCudgelGen", "Weapon_Craft1", "");
+        BaseItem("Melee_KanaboGen", "Weapon_Craft1", "");
+        BaseItem("Melee_BoGen", "Weapon_Craft1", "");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_BouncersPal", "", "Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        RequiredItem("CraftPart_Nails", 2);
+        NamePrefix("&CraftNaildPrefixName&");
+        AdditionalDamageType(DamageType_Bleeding);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Boltscraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Boltscraft&");
+        Description('&ColItem_Craftplan_Boltscraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_MetalBaseballBatGen", "", "Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_PoliceBatonGen", "Weapon_Craft1", "");
+        BaseItem("Melee_MetalBatonGen", "Weapon_Craft1", "");
+        BaseItem("Melee_HeavyBatonGen", "Weapon_Craft1", "");
+        RequiredItem("CraftPart_Bolts", 2);
+        NamePrefix("&CraftBoltsPrefixName&");
+        AdditionalDamageType(DamageType_Bleeding);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Barbedwirecraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Barbedwirecraft&");
+        Description('&ColItem_Craftplan_Barbedwirecraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_BaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_BaseballBatBigGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_MetalBaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_StickGen", "Weapon_Craft6", "");
+        BaseItem("Melee_WoodenBatonGen", "Weapon_Craft6", "");
+        BaseItem("Melee_TonfaGen", "Weapon_Craft6", "");
+        BaseItem("Melee_HeavyBatonGen", "Weapon_Craft6", "");
+        BaseItem("Melee_MetalBatonGen", "Weapon_Craft6", "");
+        BaseItem("Melee_PoliceBatonGen", "Weapon_Craft6", "");
+        BaseItem("Melee_MaceCudgelGen", "Weapon_Craft7", "");
+        BaseItem("Melee_MaceFlangedGen", "Weapon_Craft7", "");
+        BaseItem("Melee_MaceExoticGen", "Weapon_Craft7", "");
+        BaseItem("Melee_KanaboGen", "Weapon_Craft7", "");
+        BaseItem("Melee_KanaboMetalGen", "Weapon_Craft6", "");
+        BaseItem("Melee_BoGen", "Weapon_Craft2", "");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        RequiredItem("CraftPart_BarbedWire", 2);
+        NamePrefix("&CraftBarbedPrefixName&");
+        AdditionalDamageType(DamageType_Bleeding);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Glazedcraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Glazedcraft&");
+        Description('&ColItem_Craftplan_Glazedcraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(400);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_BaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_BaseballBatBigGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_MetalBaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_StickGen", "Weapon_Craft5", "");
+        BaseItem("Melee_WoodenBatonGen", "Weapon_Craft5", "");
+        BaseItem("Melee_TonfaGen", "Weapon_Craft5", "");
+        BaseItem("Melee_HeavyBatonGen", "Weapon_Craft5", "");
+        BaseItem("Melee_MetalBatonGen", "Weapon_Craft5", "");
+        BaseItem("Melee_PoliceBatonGen", "Weapon_Craft5", "");
+        BaseItem("Melee_KanaboGen", "Weapon_Craft6", "");
+        BaseItem("Melee_KanaboMetalGen", "Weapon_Craft5", "");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        RequiredItem("CraftPart_Glue", 2);
+        RequiredItem("CraftPart_Rag", 2);
+        NamePrefix("&CraftGlazedPrefixName&");
+        AdditionalDamageType(DamageType_Bleeding);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.33);
+        AdditionalDamadeLevel(2);
+        Color(Color_Green);
+    }
+
+    Item("Craftplan_Verticalbladescraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Verticalbladescraft&");
+        Description('&ColItem_Craftplan_Verticalbladescraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_BaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_BaseballBatBigGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_MetalBaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_StickGen", "Weapon_Craft7", "");
+        BaseItem("Melee_WoodenBatonGen", "Weapon_Craft7", "");
+        BaseItem("Melee_TonfaGen", "Weapon_Craft7", "");
+        BaseItem("Melee_HeavyBatonGen", "Weapon_Craft7", "");
+        BaseItem("Melee_MetalBatonGen", "Weapon_Craft7", "");
+        BaseItem("Melee_PoliceBatonGen", "Weapon_Craft7", "");
+        BaseItem("Melee_KanaboGen", "Weapon_Craft8", "");
+        BaseItem("Melee_KanaboMetalGen", "Weapon_Craft7", "");
+        BaseItem("Melee_BoGen", "Weapon_Craft7", "");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft9 Weapon_Craft10");
+        RequiredItem("CraftPart_Blade", 2);
+        RequiredItem("CraftPart_Bolts", 3);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        NamePrefix("&CraftVerticalPrefixName&");
+        AdditionalDamageType(DamageType_Bleeding);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.41);
+        AdditionalDamadeLevel(3);
+        Color(Color_Yellow);
+    }
+
+    Item("Craftplan_Horizontalbladescraft", CategoryType_Collectable)
+    {
+        Name("&colitem_craftplan_horzbladescraft&");
+        Description('&colitem_craftplan_horzbladescraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_BaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
+        BaseItem("Melee_BaseballBatBigGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
+        BaseItem("Melee_MetalBaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
+        BaseItem("Melee_StickGen", "Weapon_Craft8", "");
+        BaseItem("Melee_WoodenBatonGen", "Weapon_Craft8", "");
+        BaseItem("Melee_TonfaGen", "Weapon_Craft8", "");
+        BaseItem("Melee_KanaboGen", "Weapon_Craft9", "");
+        BaseItem("Melee_BoGen", "Weapon_Craft8", "");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
+        BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
+        RequiredItem("CraftPart_Blade", 2);
+        RequiredItem("CraftPart_Bolts", 3);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        NamePrefix("&CraftHorizontalPrefixName&");
+        AdditionalDamageType(DamageType_Bleeding);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.41);
+        AdditionalDamadeLevel(3);
+        Color(Color_Yellow);
+    }
+
+    Item("Craftplan_Sawdiscaxecraft", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Sawdiscaxecraft&");
+        Description('&ColItem_Craftplan_Sawdiscaxecraft_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_BaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9");
+        BaseItem("Melee_BaseballBatBigGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9");
+        BaseItem("Melee_KanaboGen", "Weapon_Craft10", "");
+        BaseItem("Melee_BoGen", "Weapon_Craft9", "");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9");
+        BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9");
+        RequiredItem("CraftPart_CircularBlade", 1);
+        RequiredItem("CraftPart_Bolts", 2);
+        RequiredItem("CraftPart_SteelRod", 1);
+        RequiredItem("CraftPart_Clamp", 2);
+        NamePrefix("&CraftSawdiscPrefixName&");
+        AdditionalDamageType(DamageType_Bleeding);
+        AdditionalDamage(0.05);
+        AdditionalCriticalProb(0.06);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.5);
+        AdditionalDamadeLevel(4);
+        Color(Color_Violet);
+    }
+
+    Item("Craftplan_Critical1", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Critical1&");
+        Description('&ColItem_Craftplan_Critical1_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_HammerGen", "Weapon_Craft4", "");
+        BaseItem("Melee_HammerNailGen", "Weapon_Craft4", "");
+        BaseItem("Melee_HammerHeavyGen", "Weapon_Craft4", "");
+        BaseItem("Melee_SledgeHammerGen", "Weapon_Craft5", "");
+        BaseItem("Melee_SledgeHammerConstGen", "Weapon_Craft5", "");
+        BaseItem("Melee_SledgeHammerMaulGen", "Weapon_Craft5", "");
+        BaseItem("Melee_PickaxeGen", "Weapon_Craft4", "");
+        BaseItem("Melee_CrowbarGen", "Weapon_Craft4", "");
+        BaseItem("Melee_BoGen", "Weapon_Craft4", "");
+        BaseItem("Melee_leg_Ban", "Weapon_Craft4", "");
+        BaseItem("Melee_leg_M.C.", "Weapon_Craft4", "");
+        BaseItem("Melee_leg_PickOfDestiny", "Weapon_Craft4", "");
+        BaseItem("Melee_leg_GabrielsSledgeHammer", "Weapon_Craft5", "");
+        RequiredItem("CraftPart_WeightPlate", 1);
+        RequiredItem("CraftPart_Clamp", 2);
+        NamePrefix("&CraftCritical1PrefixName&");
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDamage(0.25);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Critical2", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Critical2&");
+        Description('&ColItem_Craftplan_Critical2_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(400);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_HammerGen", "Weapon_Craft5", "");
+        BaseItem("Melee_HammerNailGen", "Weapon_Craft5", "");
+        BaseItem("Melee_HammerHeavyGen", "Weapon_Craft5", "");
+        BaseItem("Melee_SledgeHammerGen", "Weapon_Craft6", "");
+        BaseItem("Melee_SledgeHammerConstGen", "Weapon_Craft6", "");
+        BaseItem("Melee_SledgeHammerMaulGen", "Weapon_Craft6", "");
+        BaseItem("Melee_PickaxeGen", "Weapon_Craft5", "");
+        BaseItem("Melee_CrowbarGen", "Weapon_Craft5", "");
+        BaseItem("Melee_BoGen", "Weapon_Craft3", "");
+        BaseItem("Melee_leg_Ban", "Weapon_Craft5", "");
+        BaseItem("Melee_leg_M.C.", "Weapon_Craft5", "");
+        BaseItem("Melee_leg_PickOfDestiny", "Weapon_Craft5", "");
+        BaseItem("Melee_leg_GabrielsSledgeHammer", "Weapon_Craft6", "");
+        RequiredItem("CraftPart_WeightPlate", 1);
+        RequiredItem("CraftPart_Gear", 1);
+        RequiredItem("CraftPart_Clamp", 2);
+        NamePrefix("&CraftCritical2PrefixName&");
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDamage(0.33);
+        AdditionalDamadeLevel(2);
+        Color(Color_Green);
+    }
+
+    Item("Craftplan_Critical3", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Critical3&");
+        Description('&ColItem_Craftplan_Critical3_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_SledgeHammerGen", "Weapon_Craft7", "");
+        BaseItem("Melee_SledgeHammerConstGen", "Weapon_Craft7", "");
+        BaseItem("Melee_SledgeHammerMaulGen", "Weapon_Craft7", "");
+        BaseItem("Melee_PickaxeGen", "Weapon_Craft6", "");
+        BaseItem("Melee_leg_GabrielsSledgeHammer", "Weapon_Craft6", "");
+        BaseItem("Melee_leg_PickOfDestiny", "Weapon_Craft6", "");
+        RequiredItem("CraftPart_WeightPlate", 1);
+        RequiredItem("CraftPart_Gear", 1);
+        RequiredItem("CraftPart_Blade", 1);
+        RequiredItem("CraftPart_Clamp", 2);
+        NamePrefix("&CraftCritical3PrefixName&");
+        AdditionalCriticalProb(0.04);
+        AdditionalCriticalDamage(0.41);
+        AdditionalDamadeLevel(3);
+        Color(Color_Yellow);
+    }
+
+    Item("Craftplan_Critical4", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Critical4&");
+        Description('&ColItem_Craftplan_Critical4_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_SledgeHammerGen", "Weapon_Craft8", "");
+        BaseItem("Melee_SledgeHammerConstGen", "Weapon_Craft8", "");
+        BaseItem("Melee_SledgeHammerMaulGen", "Weapon_Craft8", "");
+        BaseItem("Melee_leg_GabrielsSledgeHammer", "Weapon_Craft8", "");
+        RequiredItem("CraftPart_WeightPlate", 1);
+        RequiredItem("CraftPart_Gear", 1);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Clamp", 2);
+        RequiredItem("CraftPart_Blade", 3);
+        NamePrefix("&CraftCritical4PrefixName&");
+        AdditionalCriticalProb(0.06);
+        AdditionalCriticalDamage(0.5);
+        AdditionalDamadeLevel(4);
+        Color(Color_Violet);
+    }
+
+    Item("Craftplan_Pridegun", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Pridegun&");
+        Description('&ColItem_Craftplan_Pridegun_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Firearm_M9Gen", "Weapon_Craft6", "");
+        BaseItem("Firearm_DesertEagleGen", "Weapon_Craft6", "");
+        BaseItem("Firearm_leg_Mccall9Mm", "Weapon_Craft5", "");
+        RequiredItem("CraftPart_Deodorant", 2);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Wire", 2);
+        RequiredItem("CraftPart_GasForLighter", 2);
+        NamePrefix("&CraftPridePrefixName&");
+        AdditionalDamageType(DamageType_Impact);
+        AdditionalDamage(0.01);
+        AdditionalCriticalProb(0.02);
+        AdditionalCriticalDamage(0.25);
+        AdditionalCriticalPhysicsDamage(2.5);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Priderifle", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Priderifle&");
+        Description('&ColItem_Craftplan_Priderifle_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(2400);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Firearm_AutoRifle", "Weapon_Craft5", "");
+        BaseItem("Firearm_SingleShotRifle", "Weapon_Craft5", "");
+        BaseItem("Firearm_BurstRifle", "Weapon_Craft5", "");
+        BaseItem("Firearm_leg_DefenderOfTheMotherland", "Weapon_Craft5", "");
+        RequiredItem("CraftPart_Deodorant", 2);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Wire", 2);
+        RequiredItem("CraftPart_GasForLighter", 2);
+        NamePrefix("&CraftPridePrefixName&");
+        AdditionalDamageType(DamageType_Impact);
+        AdditionalDamage(0.01);
+        AdditionalCriticalProb(0.01);
+        AdditionalCriticalDamage(0.25);
+        AdditionalCriticalPhysicsDamage(2.5);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Prideshotgun", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Prideshotgun&");
+        Description('&ColItem_Craftplan_Prideshotgun_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(2400);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Firearm_Shotgun", "", "");
+        BaseItem("Firearm_ShotgunShort", "", "");
+        BaseItem("Firearm_leg_CrowdPleaser", "", "");
+        RequiredItem("CraftPart_Deodorant", 2);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Wire", 2);
+        RequiredItem("CraftPart_GasForLighter", 2);
+        NamePrefix("&CraftPridePrefixName&");
+        AdditionalDamageType(DamageType_Impact);
+        AdditionalDamage(0.01);
+        AdditionalCriticalProb(0.01);
+        AdditionalCriticalDamage(0.25);
+        AdditionalCriticalPhysicsDamage(2.5);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Detoxgun", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Detoxgun&");
+        Description('&ColItem_Craftplan_Detoxgun_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Firearm_M9Gen", "Weapon_Craft4", "");
+        BaseItem("Firearm_DesertEagleGen", "Weapon_Craft4", "");
+        BaseItem("Firearm_leg_Mccall9Mm", "Weapon_Craft5", "");
+        RequiredItem("CraftPart_Oleander", 2);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Detergent", 2);
+        RequiredItem("CraftPart_FlexibleHose", 1);
+        NamePrefix("&CraftDetoxPrefixName&");
+        AdditionalDamageType(DamageType_Poison);
+        AdditionalDamage(0.03);
+        AdditionalCriticalProb(0.02);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        PropagateProb(0.1);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Detoxrifle", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Detoxrifle&");
+        Description('&ColItem_Craftplan_Detoxrifle_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Firearm_AutoRifle", "Weapon_Craft6", "");
+        BaseItem("Firearm_SingleShotRifle", "Weapon_Craft6", "");
+        BaseItem("Firearm_BurstRifle", "Weapon_Craft6", "");
+        BaseItem("Firearm_leg_DefenderOfTheMotherland", "Weapon_Craft5", "");
+        RequiredItem("CraftPart_Oleander", 2);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Detergent", 2);
+        RequiredItem("CraftPart_FlexibleHose", 1);
+        NamePrefix("&CraftDetoxPrefixName&");
+        AdditionalDamageType(DamageType_Poison);
+        AdditionalDamage(0.02);
+        AdditionalCriticalProb(0.01);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        PropagateProb(0.1);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Detoxshotgun", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Detoxshotgun&");
+        Description('&ColItem_Craftplan_Detoxshotgun_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Firearm_Shotgun", "", "");
+        BaseItem("Firearm_ShotgunShort", "", "");
+        BaseItem("Firearm_leg_CrowdPleaser", "", "");
+        RequiredItem("CraftPart_Oleander", 2);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Detergent", 2);
+        RequiredItem("CraftPart_FlexibleHose", 1);
+        NamePrefix("&CraftDetoxPrefixName&");
+        AdditionalDamageType(DamageType_Poison);
+        AdditionalDamage(0.02);
+        AdditionalCriticalProb(0.01);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        PropagateProb(0.1);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Strikergun", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Strikergun&");
+        Description('&ColItem_Craftplan_Strikergun_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Firearm_M9Gen", "Weapon_Craft3", "");
+        BaseItem("Firearm_DesertEagleGen", "Weapon_Craft3", "");
+        BaseItem("Firearm_leg_Mccall9Mm", "Weapon_Craft5", "");
+        RequiredItem("CraftPart_GasForLighter", 2);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Glue", 2);
+        RequiredItem("CraftPart_Detergent", 2);
+        NamePrefix("&CraftStrikerPrefixName&");
+        AdditionalDamageType(DamageType_Fire);
+        AdditionalDamage(0.03);
+        AdditionalCriticalProb(0.02);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        PropagateProb(0.1);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Strikerrifle", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Strikerrifle&");
+        Description('&ColItem_Craftplan_Strikerrifle_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Firearm_AutoRifle", "Weapon_Craft8", "");
+        BaseItem("Firearm_SingleShotRifle", "Weapon_Craft8", "");
+        BaseItem("Firearm_BurstRifle", "Weapon_Craft8", "");
+        BaseItem("Firearm_leg_DefenderOfTheMotherland", "Weapon_Craft5", "");
+        RequiredItem("CraftPart_GasForLighter", 2);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Glue", 2);
+        RequiredItem("CraftPart_Detergent", 2);
+        NamePrefix("&CraftStrikerPrefixName&");
+        AdditionalDamageType(DamageType_Fire);
+        AdditionalDamage(0.02);
+        AdditionalCriticalProb(0.01);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        PropagateProb(0.1);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Strikershotgun", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Strikershotgun&");
+        Description('&ColItem_Craftplan_Strikershotgun_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Firearm_Shotgun", "", "");
+        BaseItem("Firearm_ShotgunShort", "", "");
+        BaseItem("Firearm_leg_CrowdPleaser", "", "");
+        RequiredItem("CraftPart_GasForLighter", 2);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Glue", 2);
+        RequiredItem("CraftPart_Detergent", 2);
+        NamePrefix("&CraftStrikerPrefixName&");
+        AdditionalDamageType(DamageType_Fire);
+        AdditionalDamage(0.02);
+        AdditionalCriticalProb(0.01);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        PropagateProb(0.1);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Shockgun", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Shockgun&");
+        Description('&ColItem_Craftplan_Shockgun_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(600);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Firearm_M9Gen", "Weapon_Craft5", "");
+        BaseItem("Firearm_DesertEagleGen", "Weapon_Craft5", "");
+        BaseItem("Firearm_leg_Mccall9Mm", "Weapon_Craft5", "");
+        RequiredItem("CraftPart_Battery", 2);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Magnet", 2);
+        NamePrefix("&CraftElectricPrefixName&");
+        AdditionalDamageType(DamageType_Electric);
+        AdditionalDamage(0.03);
+        AdditionalCriticalProb(0.02);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        PropagateProb(0.1);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Shockrifle", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Shockrifle&");
+        Description('&ColItem_Craftplan_Shockrifle_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Firearm_AutoRifle", "Weapon_Craft7", "");
+        BaseItem("Firearm_SingleShotRifle", "Weapon_Craft7", "");
+        BaseItem("Firearm_BurstRifle", "Weapon_Craft7", "");
+        BaseItem("Firearm_leg_DefenderOfTheMotherland", "Weapon_Craft5", "");
+        RequiredItem("CraftPart_Battery", 2);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Magnet", 2);
+        NamePrefix("&CraftElectricPrefixName&");
+        AdditionalDamageType(DamageType_Electric);
+        AdditionalDamage(0.02);
+        AdditionalCriticalProb(0.01);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        PropagateProb(0.1);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Shockshotgun", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Shockshotgun&");
+        Description('&ColItem_Craftplan_Shockshotgun_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1200);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Firearm_Shotgun", "", "");
+        BaseItem("Firearm_ShotgunShort", "", "");
+        BaseItem("Firearm_leg_CrowdPleaser", "", "");
+        RequiredItem("CraftPart_Battery", 2);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Magnet", 2);
+        NamePrefix("&CraftElectricPrefixName&");
+        AdditionalDamageType(DamageType_Electric);
+        AdditionalDamage(0.02);
+        AdditionalCriticalProb(0.01);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.25);
+        PropagateProb(0.1);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Pistolammo", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Pistolammo&");
+        Description('&ColItem_Craftplan_Pistolammo_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(250);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Ammo_PistolCraft", "", "");
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Detergent", 1);
+        Color(Color_White);
+        CraftCreatesBaseItem(true);
+    }
+
+    Item("Craftplan_Shotgunammo", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Shotgunammo&");
+        Description('&ColItem_Craftplan_Shotgunammo_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(500);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Ammo_ShotgunCraft", "", "");
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Detergent", 1);
+        Color(Color_White);
+        CraftCreatesBaseItem(true);
+    }
+
+    Item("Craftplan_Rifleammo", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Rifleammo&");
+        Description('&ColItem_Craftplan_Rifleammo_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(750);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Ammo_RifleCraft", "", "");
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Detergent", 1);
+        Color(Color_White);
+        CraftCreatesBaseItem(true);
+    }
+
+    Item("Craftplan_Exclusive1", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Exclusive1&");
+        Description('&ColItem_Craftplan_Exclusive1_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(100);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_BaseballBatGen", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10", "");
+        BaseItem("Melee_leg_Homerun", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10", "");
+        BaseItem("Melee_leg_BluntSpeaker", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10", "");
+        BaseItem("Melee_leg_BouncersPal", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10", "");
+        RequiredItem("CraftPart_Tape", 2);
+        RequiredItem("CraftPart_Wire", 2);
+        RequiredItem("CraftPart_Belt", 1);
+        RequiredItem("CraftPart_BatteryLarge", 1);
+        RequiredItem("CraftPart_CircularBlade", 1);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        NamePrefix("&CraftBleedingPrefixName&");
+        AdditionalDamageType(DamageType_Bleeding);
+        AdditionalDamage(0.03);
+        AdditionalCriticalProb(0.05);
+        AdditionalCriticalDuration(5.0);
+        AdditionalCriticalDamage(0.5);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+        PresentInDLC(2);
+        RotateBone(true);
+    }
+
+    Item("Craftplan_Exclusive2", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Exclusive2&");
+        Description('&ColItem_Craftplan_Exclusive2_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(100);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_Machete", "weapon_craft9", "");
+        BaseItem("Melee_leg_TheMachete", "weapon_craft9", "");
+        BaseItem("Melee_leg_Bushmaster", "weapon_craft9", "");
+        RequiredItem("CraftPart_Tape", 2);
+        RequiredItem("CraftPart_Wire", 2);
+        RequiredItem("CraftPart_Battery", 1);
+        RequiredItem("CraftPart_Belt", 1);
+        RequiredItem("CraftPart_BatteryLarge", 1);
+        RequiredItem("CraftPart_MetalScrap", 1);
+        NamePrefix("&CraftFirePrefixName&");
+        AdditionalDamageType(DamageType_Fire);
+        AdditionalDamage(0.03);
+        AdditionalCriticalProb(0.05);
+        AdditionalCriticalDuration(0.0);
+        AdditionalCriticalDamage(0.5);
+        AdditionalDamadeLevel(1);
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Exclusive3", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Exclusive3&");
+        Description('&ColItem_Craftplan_Exclusive3_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(50);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Melee_Knife", "weapon_craft10", "");
+        BaseItem("Melee_leg_AssassinsGreed", "weapon_craft10", "");
+        RequiredItem("CraftPart_Tape", 1);
+        RequiredItem("CraftPart_Wire", 1);
+        RequiredItem("CraftPart_BatteryLarge", 2);
+        RequiredItem("CraftPart_Nails", 1);
+        NamePrefix("&CraftElectricPrefixName&");
+        AdditionalDamageType(DamageType_Electric);
+        AdditionalDamage(1000.0);
+        AdditionalCriticalDuration(5.0);
+        AdditionalBlastRange(10.0);    // Converted
+        Color(Color_White);
+    }
+
+    Item("Craftplan_Exclusive4", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Exclusive4&");
+        Description('&ColItem_Craftplan_Exclusive4_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(50);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Throwable_BrainWaveBomb", "", "");
+        RequiredItem("CraftPart_Tape", 2);
+        RequiredItem("CraftPart_Wire", 1);
+        RequiredItem("CraftPart_ElectronicScrap", 2);
+        RequiredItem("CraftPart_Phone", 1);
+        RequiredItem("CraftPart_BatteryLarge", 2);
+        Color(Color_White);
+        CraftCreatesBaseItem(true);
+    }
+
+    Item("Craftplan_Exclusive5", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Exclusive5&");
+        Description('&ColItem_Craftplan_Exclusive5_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(50);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Throwable_StunBomb", "", "");
+        RequiredItem("CraftPart_Tape", 1);
+        RequiredItem("CraftPart_Wire", 1);
+        RequiredItem("CraftPart_Battery", 1);
+        RequiredItem("CraftPart_Deodorant", 2);
+        RequiredItem("CraftPart_Watch", 1);
+        Color(Color_White);
+        CraftCreatesBaseItem(true);
+    }
+
+    Item("Craftplan_Exclusive6", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Exclusive6&");
+        Description('&ColItem_Craftplan_Exclusive6_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(50);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Throwable_PoisonBomb", "", "");
+        RequiredItem("CraftPart_Tape", 1);
+        RequiredItem("CraftPart_Wire", 1);
+        RequiredItem("CraftPart_Battery", 1);
+        RequiredItem("CraftPart_MetalScrap", 2);
+        RequiredItem("CraftPart_Watch", 1);
+        Color(Color_White);
+        CraftCreatesBaseItem(true);
+    }
+
+    Item("Craftplan_Exclusive7", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Exclusive7&");
+        Description('&ColItem_Craftplan_Exclusive7_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(50);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Throwable_ShockBomb", "", "");
+        RequiredItem("CraftPart_Tape", 1);
+        RequiredItem("CraftPart_Wire", 1);
+        RequiredItem("CraftPart_Battery", 1);
+        Color(Color_White);
+        CraftCreatesBaseItem(true);
+    }
+
+    Item("Craftplan_Exclusive8", CategoryType_Collectable)
+    {
+        Name("&ColItem_Craftplan_Exclusive8&");
+        Description('&ColItem_Craftplan_Exclusive8_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(50);
+        Mesh("blueprint_a.msh");
+        Skin("default_hl");
+        BaseItem("Throwable_ExplodingMeat", "", "");
+        RequiredItem("Throwable_MeatJar", 1);
+        RequiredItem("CraftPart_Tape", 1);
+        RequiredItem("CraftPart_Wire", 1);
+        RequiredItem("CraftPart_Battery", 1);
+        RequiredItem("CraftPart_Watch", 1);
+        RequiredItem("CraftPart_Detergent", 1);
+        Color(Color_White);
+        CraftCreatesBaseItem(true);
+        PresentInDLC(3);
+    }
+
+    Item("Collectable_Idcard000", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard000&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard000&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard001", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard001&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard001&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard002", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard002&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard002&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard003", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard003&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard003&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard004", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard004&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard004&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard005", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard005&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard005&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard006", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard006&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard006&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard007", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard007&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard007&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard008", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard008&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard008&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard009", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard009&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard009&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard010", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard010&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard010&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard011", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard011&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard011&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard012", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard012&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard012&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard013", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard013&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard013&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard014", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard014&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard014&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard015", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard015&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard015&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard016", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard016&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard016&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard017", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard017&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard017&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard018", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard018&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard018&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard019", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard019&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard019&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard020", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard020&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard020&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard021", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard021&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard021&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard022", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard022&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard022&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard023", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard023&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard023&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard024", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard024&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard024&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard025", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard025&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard025&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard026", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard026&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard026&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard027", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard027&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard027&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard028", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard028&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard028&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard029", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard029&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard029&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard030", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard030&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard030&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard031", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard031&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard031&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard032", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard032&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard032&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard033", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard033&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard033&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard034", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard034&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard034&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard035", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard035&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard035&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard036", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard036&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard036&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard037", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard037&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard037&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard038", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard038&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard038&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard039", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard039&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard039&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard040", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard040&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard040&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard041", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard041&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard041&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard042", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard042&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard042&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard043", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard043&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard043&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard044", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard044&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard044&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard045", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard045&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard045&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard046", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard046&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard046&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard047", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard047&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard047&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard048", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard048&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard048&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard049", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard049&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard049&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard050", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard050&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard050&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard051", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard051&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard051&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard052", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard052&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard052&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard053", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard053&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard053&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard054", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard054&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard054&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard055", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard055&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard055&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard056", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard056&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard056&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard057", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard057&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard057&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard058", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard058&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard058&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard059", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard059&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard059&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard060", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard060&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard060&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard061", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard061&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard061&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard062", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard062&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard062&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard063", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard063&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard063&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard064", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard064&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard064&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard065", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard065&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard065&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard066", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard066&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard066&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard067", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard067&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard067&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard068", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard068&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard068&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard069", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard069&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard069&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard070", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard070&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard070&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard071", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard071&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard071&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard072", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard072&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard072&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard073", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard073&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard073&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard074", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard074&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard074&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard075", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard075&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard075&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard076", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard076&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard076&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard077", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard077&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard077&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard078", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard078&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard078&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard079", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard079&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard079&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard080", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard080&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard080&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard081", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard081&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard081&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard082", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard082&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard082&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard083", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard083&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard083&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard084", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard084&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard084&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard085", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard085&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard085&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard086", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard086&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard086&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard087", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard087&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard087&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard088", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard088&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard088&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard089", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard089&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard089&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard090", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard090&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard090&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard091", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard091&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard091&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard092", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard092&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard092&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard093", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard093&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard093&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard094", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard094&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard094&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard095", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard095&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard095&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard096", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard096&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard096&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard097", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard097&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard097&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard098", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard098&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard098&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_Idcard099", CategoryType_Collectable)
+    {
+        Name("&ColItem_Idcard099&");
+        ItemType(ItemType_IdCard);
+        Mesh("collectable_card.msh");
+        Skin("Default_hl");
+        Description("&Collcectable_IDCard099&");
+        Color(Color_White);
+    }
+
+    Item("Collectable_News00", CategoryType_Collectable)
+    {
+        Name("&ColItem_News00&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News00Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News01", CategoryType_Collectable)
+    {
+        Name("&ColItem_News01&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News01Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News02", CategoryType_Collectable)
+    {
+        Name("&ColItem_News02&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News02Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News03", CategoryType_Collectable)
+    {
+        Name("&ColItem_News03&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News03Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News04", CategoryType_Collectable)
+    {
+        Name("&ColItem_News04&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News04Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News05", CategoryType_Collectable)
+    {
+        Name("&ColItem_News05&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News05Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News06", CategoryType_Collectable)
+    {
+        Name("&ColItem_News06&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News06Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News07", CategoryType_Collectable)
+    {
+        Name("&ColItem_News07&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News07Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News08", CategoryType_Collectable)
+    {
+        Name("&ColItem_News08&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News08Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News09", CategoryType_Collectable)
+    {
+        Name("&ColItem_News09&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News09Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News10", CategoryType_Collectable)
+    {
+        Name("&ColItem_News10&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News10Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News11", CategoryType_Collectable)
+    {
+        Name("&ColItem_News11&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News11Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News12", CategoryType_Collectable)
+    {
+        Name("&ColItem_News12&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News12Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News13", CategoryType_Collectable)
+    {
+        Name("&ColItem_News13&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News13Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News14", CategoryType_Collectable)
+    {
+        Name("&ColItem_News14&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News14Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News15", CategoryType_Collectable)
+    {
+        Name("&ColItem_News15&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News15Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News16", CategoryType_Collectable)
+    {
+        Name("&ColItem_News16&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News16Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News17", CategoryType_Collectable)
+    {
+        Name("&ColItem_News17&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News17Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News18", CategoryType_Collectable)
+    {
+        Name("&ColItem_News18&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News18Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News19", CategoryType_Collectable)
+    {
+        Name("&ColItem_News19&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News19Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News20", CategoryType_Collectable)
+    {
+        Name("&ColItem_News20&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News20Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News21", CategoryType_Collectable)
+    {
+        Name("&ColItem_News21&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News21Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News22", CategoryType_Collectable)
+    {
+        Name("&ColItem_News22&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News22Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News23", CategoryType_Collectable)
+    {
+        Name("&ColItem_News23&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News23Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News24", CategoryType_Collectable)
+    {
+        Name("&ColItem_News24&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News24Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News25", CategoryType_Collectable)
+    {
+        Name("&ColItem_News25&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News25Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News26", CategoryType_Collectable)
+    {
+        Name("&ColItem_News26&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News26Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News27", CategoryType_Collectable)
+    {
+        Name("&ColItem_News27&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News27Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News28", CategoryType_Collectable)
+    {
+        Name("&ColItem_News28&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News28Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News29", CategoryType_Collectable)
+    {
+        Name("&ColItem_News29&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News29Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News30", CategoryType_Collectable)
+    {
+        Name("&ColItem_News30&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News30Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News31", CategoryType_Collectable)
+    {
+        Name("&ColItem_News31&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News31Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News32", CategoryType_Collectable)
+    {
+        Name("&ColItem_News32&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News32Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News33", CategoryType_Collectable)
+    {
+        Name("&ColItem_News33&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News33Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News34", CategoryType_Collectable)
+    {
+        Name("&ColItem_News34&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News34Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News35", CategoryType_Collectable)
+    {
+        Name("&ColItem_News35&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News35Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News36", CategoryType_Collectable)
+    {
+        Name("&ColItem_News36&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News36Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News37", CategoryType_Collectable)
+    {
+        Name("&ColItem_News37&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News37Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News38", CategoryType_Collectable)
+    {
+        Name("&ColItem_News38&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News38Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_News39", CategoryType_Collectable)
+    {
+        Name("&ColItem_News39&");
+        ItemType(ItemType_News);
+        Mesh("collectable_files.msh");
+        Skin("Default_hl");
+        Description("&ColItem_News39Data&");
+        Color(Color_Green);
+    }
+
+    Item("Collectable_Tape00", CategoryType_Collectable)
+    {
+        Name("&ColItem_Tape00&");
+        ItemType(ItemType_Tape);
+        Mesh("collectable_recorder.msh");
+        Skin("Default_hl");
+        TapeSoundName("CollectableRecording_01.ogg");
+        Color(Color_Violet);
+    }
+
+    Item("Collectable_Tape01", CategoryType_Collectable)
+    {
+        Name("&ColItem_Tape01&");
+        ItemType(ItemType_Tape);
+        Mesh("collectable_recorder.msh");
+        Skin("Default_hl");
+        TapeSoundName("CollectableRecording_02.ogg");
+        Color(Color_Violet);
+    }
+
+    Item("Collectable_Tape02", CategoryType_Collectable)
+    {
+        Name("&ColItem_Tape02&");
+        ItemType(ItemType_Tape);
+        Mesh("collectable_recorder.msh");
+        Skin("Default_hl");
+        TapeSoundName("CollectableRecording_03.ogg");
+        Color(Color_Violet);
+    }
+
+    Item("Collectable_Tape03", CategoryType_Collectable)
+    {
+        Name("&ColItem_Tape03&");
+        ItemType(ItemType_Tape);
+        Mesh("collectable_recorder.msh");
+        Skin("Default_hl");
+        TapeSoundName("CollectableRecording_04.ogg");
+        Color(Color_Violet);
+    }
+
+    Item("Collectable_Tape04", CategoryType_Collectable)
+    {
+        Name("&ColItem_Tape04&");
+        ItemType(ItemType_Tape);
+        Mesh("collectable_recorder.msh");
+        Skin("Default_hl");
+        TapeSoundName("CollectableRecording_05.ogg");
+        Color(Color_Violet);
+    }
+
+    Item("Collectable_Tape05", CategoryType_Collectable)
+    {
+        Name("&ColItem_Tape05&");
+        ItemType(ItemType_Tape);
+        Mesh("collectable_recorder.msh");
+        Skin("Default_hl");
+        TapeSoundName("CollectableRecording_06.ogg");
+        Color(Color_Violet);
+    }
+
+    Item("Collectable_Tape06", CategoryType_Collectable)
+    {
+        Name("&ColItem_Tape06&");
+        ItemType(ItemType_Tape);
+        Mesh("collectable_recorder.msh");
+        Skin("Default_hl");
+        TapeSoundName("CollectableRecording_07.ogg");
+        Color(Color_Violet);
+    }
+
+    Item("Collectable_Tape07", CategoryType_Collectable)
+    {
+        Name("&ColItem_Tape07&");
+        ItemType(ItemType_Tape);
+        Mesh("collectable_recorder.msh");
+        Skin("Default_hl");
+        TapeSoundName("CollectableRecording_08.ogg");
+        Color(Color_Violet);
+    }
+
+    Item("Collectable_Tape08", CategoryType_Collectable)
+    {
+        Name("&ColItem_Tape08&");
+        ItemType(ItemType_Tape);
+        Mesh("collectable_recorder.msh");
+        Skin("Default_hl");
+        TapeSoundName("CollectableRecording_09.ogg");
+        Color(Color_Violet);
+    }
+
+    Item("Collectable_Tape09", CategoryType_Collectable)
+    {
+        Name("&ColItem_Tape09&");
+        ItemType(ItemType_Tape);
+        Mesh("collectable_recorder.msh");
+        Skin("Default_hl");
+        TapeSoundName("CollectableRecording_10.ogg");
+        Color(Color_Violet);
+    }
+
+    Item("Collectable_Tape10", CategoryType_Collectable)
+    {
+        Name("&ColItem_Tape10&");
+        ItemType(ItemType_Tape);
+        Mesh("collectable_recorder.msh");
+        Skin("Default_hl");
+        TapeSoundName("CollectableRecording_11.ogg");
+        Color(Color_Violet);
+    }
+
+    Item("Collectable_Tape11", CategoryType_Collectable)
+    {
+        Name("&ColItem_Tape11&");
+        ItemType(ItemType_Tape);
+        Mesh("collectable_recorder.msh");
+        Skin("Default_hl");
+        TapeSoundName("CollectableRecording_12.ogg");
+        Color(Color_Violet);
+    }
+}
