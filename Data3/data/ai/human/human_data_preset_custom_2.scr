@@ -24,8 +24,9 @@ ParamFloat("sprint_speed_calm", 5.6)    // Converted
 ParamFloat("sprint_speed_alarmed", 5.6)    // Converted
 ParamFloat("back_strafe_speed_mult", 0.6)
 ParamFloat("side_strafe_speed_mult", 0.95)
-ParamFloat("can_react_on_hit", 0)
-ParamFloat("can_fall", 0)
+ParamBool("can_react_on_bullet", 1)
+ParamBool("can_react_on_hit", 0)
+ParamBool("can_fall", 0)
 
 ParamFloat("max_time_target_invisible", 5.0)
 ParamFloat("stay_in_cover_time_max", 1.0)       // longest time ai stays in cover before next shoot

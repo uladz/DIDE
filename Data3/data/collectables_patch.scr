@@ -33,6 +33,7 @@ sub main()
         RequiredItem("CraftPart_Bolts", 2);
         RequiredItem("CraftPart_Nails", 2);
         RequiredItem("CraftPart_Clamp", 1);
+        RequiredItem("CraftPart_Watch", 1);
         AdditionalDamageType(DamageType_Bleeding);
         AdditionalDamadeLevel(1);
         Color(Color_White);
@@ -199,6 +200,7 @@ sub main()
         Mesh("blueprint_a.msh");
         Skin("default_hl");
         BaseItem("Melee_PickaxeGen", "Weapon_Craft3 Weapon_Craft6", "");
+        BaseItem("Melee_leg_PickOfDestiny", "Weapon_Craft3 Weapon_Craft6", "");
         RequiredItem("CraftPart_Tape", 2);
         RequiredItem("CraftPart_Wire", 2);
         RequiredItem("CraftPart_Battery", 3);
@@ -224,6 +226,7 @@ sub main()
         Mesh("blueprint_a.msh");
         Skin("default_hl");
         BaseItem("Melee_SledgeHammerMaulGen", "Weapon_Craft4 Weapon_Craft8", "");
+        BaseItem("Melee_leg_GabrielsSledgeHammer", "Weapon_Craft4 Weapon_Craft8", "");
         RequiredItem("CraftPart_Tape", 2);
         RequiredItem("CraftPart_Wire", 2);
         RequiredItem("CraftPart_Battery", 3);
@@ -249,6 +252,7 @@ sub main()
         Mesh("blueprint_a.msh");
         Skin("default_hl");
         BaseItem("Melee_HammerHeavyGen", "Weapon_Craft2 Weapon_Craft5", "");
+        BaseItem("Melee_leg_Ban", "Weapon_Craft2 Weapon_Craft5", "");
         RequiredItem("CraftPart_Tape", 2);
         RequiredItem("CraftPart_Wire", 2);
         RequiredItem("CraftPart_Battery", 3);
@@ -351,6 +355,7 @@ sub main()
         Mesh("blueprint_a.msh");
         Skin("default_hl");
         BaseItem("Melee_MetalBaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft8 Weapon_Craft10");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft8 Weapon_Craft10");
         RequiredItem("CraftPart_Blade", 2);
         RequiredItem("CraftPart_Bolts", 3);
         RequiredItem("CraftPart_MetalScrap", 2);
@@ -374,6 +379,8 @@ sub main()
         Skin("default_hl");
         BaseItem("Melee_BaseballBatGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft9");
         BaseItem("Melee_BaseballBatBigGen", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft9");
+        BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft9");
+        BaseItem("Melee_leg_BouncersPal", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft9");
         RequiredItem("CraftPart_CircularBlade", 1);
         RequiredItem("CraftPart_Bolts", 2);
         RequiredItem("CraftPart_SteelRod", 1);

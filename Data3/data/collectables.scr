@@ -327,6 +327,7 @@ sub main()
         BaseItem("Throwable_DeoBomb", "", "");
         RequiredItem("CraftPart_Deodorant", 2);
         RequiredItem("CraftPart_Tape", 1);
+        RequiredItem("CraftPart_Watch", 1);
         AdditionalCriticalPhysicsDamage(70.0);
         AdditionalDamadeLevel(2);
         Color(Color_Green);
@@ -652,7 +653,6 @@ sub main()
         BaseItem("Melee_MaceCudgelGen", "Weapon_Craft1", "");
         BaseItem("Melee_KanaboGen", "Weapon_Craft1", "");
         BaseItem("Melee_BoGen", "Weapon_Craft1", "");
-        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
         BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
         BaseItem("Melee_leg_BouncersPal", "", "Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
         RequiredItem("CraftPart_Nails", 2);
@@ -678,6 +678,7 @@ sub main()
         BaseItem("Melee_PoliceBatonGen", "Weapon_Craft1", "");
         BaseItem("Melee_MetalBatonGen", "Weapon_Craft1", "");
         BaseItem("Melee_HeavyBatonGen", "Weapon_Craft1", "");
+        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
         RequiredItem("CraftPart_Bolts", 2);
         NamePrefix("&CraftBoltsPrefixName&");
         AdditionalDamageType(DamageType_Bleeding);
@@ -714,7 +715,7 @@ sub main()
         BaseItem("Melee_BoGen", "Weapon_Craft2", "");
         BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
         BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
-        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_BouncersPal", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
         RequiredItem("CraftPart_BarbedWire", 2);
         NamePrefix("&CraftBarbedPrefixName&");
         AdditionalDamageType(DamageType_Bleeding);
@@ -747,7 +748,7 @@ sub main()
         BaseItem("Melee_KanaboMetalGen", "Weapon_Craft5", "");
         BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
         BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
-        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_BouncersPal", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9 Weapon_Craft10");
         RequiredItem("CraftPart_Glue", 2);
         RequiredItem("CraftPart_Rag", 2);
         NamePrefix("&CraftGlazedPrefixName&");
@@ -782,7 +783,7 @@ sub main()
         BaseItem("Melee_BoGen", "Weapon_Craft7", "");
         BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft9 Weapon_Craft10");
         BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft9 Weapon_Craft10");
-        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft9 Weapon_Craft10");
+        BaseItem("Melee_leg_BouncersPal", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft9 Weapon_Craft10");
         RequiredItem("CraftPart_Blade", 2);
         RequiredItem("CraftPart_Bolts", 3);
         RequiredItem("CraftPart_MetalScrap", 2);
@@ -814,7 +815,7 @@ sub main()
         BaseItem("Melee_BoGen", "Weapon_Craft8", "");
         BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
         BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
-        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
+        BaseItem("Melee_leg_BouncersPal", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft10");
         RequiredItem("CraftPart_Blade", 2);
         RequiredItem("CraftPart_Bolts", 3);
         RequiredItem("CraftPart_MetalScrap", 2);
@@ -842,7 +843,7 @@ sub main()
         BaseItem("Melee_BoGen", "Weapon_Craft9", "");
         BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9");
         BaseItem("Melee_leg_BluntSpeaker", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9");
-        BaseItem("Melee_leg_Homerun", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9");
+        BaseItem("Melee_leg_BouncersPal", "", "Weapon_Craft1 Weapon_Craft2 Weapon_Craft3 Weapon_Craft4 Weapon_Craft5 Weapon_Craft6 Weapon_Craft7 Weapon_Craft8 Weapon_Craft9");
         RequiredItem("CraftPart_CircularBlade", 1);
         RequiredItem("CraftPart_Bolts", 2);
         RequiredItem("CraftPart_SteelRod", 1);
@@ -1467,6 +1468,7 @@ sub main()
         RequiredItem("CraftPart_Tape", 1);
         RequiredItem("CraftPart_Wire", 1);
         RequiredItem("CraftPart_Battery", 1);
+        RequiredItem("CraftPart_Watch", 1);
         Color(Color_White);
         CraftCreatesBaseItem(true);
     }

@@ -83,6 +83,24 @@ import "default.loot"
             Item("Melee_MaceFlangedGen", 1.0);
             Item("Melee_MaceHeavyStarGen", 1.0);
             Item("Melee_MaceExoticGen", 1.0);
+            Item("Melee_leg_Italianplumber", 1.0);
+            Item("Melee_leg_AssassinsGreed", 1.0);
+            Item("Melee_leg_Homerun", 1.0);
+            Item("Melee_leg_BluntSpeaker", 1.0);
+            Item("Melee_leg_VikingOfTheSouth", 1.0);
+            Item("Melee_leg_Ban", 1.0);
+            Item("Melee_leg_M.C.", 1.0);
+            Item("Melee_leg_Two-Parter", 1.0);
+            Item("Melee_leg_MasterChef", 1.0);
+            Item("Melee_leg_Bushmaster", 1.0);
+            Item("Melee_leg_BouncersPal", 1.0);
+            Item("Melee_leg_Banisher", 1.0);
+            Item("Melee_leg_Eviscerator", 1.0);
+            Item("Melee_leg_Zedsdemise", 1.0);
+            Item("Melee_leg_GabrielsSledgeHammer, 1.0");
+            Item("Melee_leg_PickOfDestiny", 1.0);
+            Item("Melee_leg_TheMachete", 1.0);
+            Item("zzz_Melee_KnucklesExoticGen", 1.0);
             Item("Firearm_ColtGen", 1.0);
             Item("Firearm_MagnumGen", 1.0);
             Item("Firearm_M9Gen", 1.0);
@@ -103,6 +121,9 @@ import "default.loot"
             Item("Firearm_BurstRifle_BGen", 1.0);
             Item("Firearm_SingleShotRifleGen", 1.0);
             Item("Firearm_SingleShotRifle_BGen", 1.0);
+            Item("Firearm_leg_Mccall9Mm", 1.0);
+            Item("Firearm_leg_CrowdPleaser", 1.0);
+            Item("Firearm_leg_DefenderOfTheMotherland", 1.0);
             Item("Throwable_Molotov", 1.0);
         }
     }
@@ -180,6 +201,24 @@ import "default.loot"
             Item("Melee_DoubleBladeExoticGen", 1.0);
             Item("Melee_ReaperGen", 1.0);
             Item("Melee_BoGen", 1.0);
+            Item("Melee_leg_Italianplumber", 1.0);
+            Item("Melee_leg_AssassinsGreed", 1.0);
+            Item("Melee_leg_Homerun", 1.0);
+            Item("Melee_leg_BluntSpeaker", 1.0);
+            Item("Melee_leg_VikingOfTheSouth", 1.0);
+            Item("Melee_leg_Ban", 1.0);
+            Item("Melee_leg_M.C.", 1.0);
+            Item("Melee_leg_Two-Parter", 1.0);
+            Item("Melee_leg_MasterChef", 1.0);
+            Item("Melee_leg_Bushmaster", 1.0);
+            Item("Melee_leg_BouncersPal", 1.0);
+            Item("Melee_leg_Banisher", 1.0);
+            Item("Melee_leg_Eviscerator", 1.0);
+            Item("Melee_leg_Zedsdemise", 1.0);
+            Item("Melee_leg_GabrielsSledgeHammer, 1.0");
+            Item("Melee_leg_PickOfDestiny", 1.0);
+            Item("Melee_leg_TheMachete", 1.0);
+            Item("zzz_Melee_KnucklesExoticGen", 1.0);
             Item("Firearm_ColtGen", 1.0);
             Item("Firearm_MagnumGen", 1.0);
             Item("Firearm_M9Gen", 1.0);
@@ -200,6 +239,9 @@ import "default.loot"
             Item("Firearm_BurstRifle_BGen", 1.0);
             Item("Firearm_SingleShotRifleGen", 1.0);
             Item("Firearm_SingleShotRifle_BGen", 1.0);
+            Item("Firearm_leg_Mccall9Mm", 1.0);
+            Item("Firearm_leg_CrowdPleaser", 1.0);
+            Item("Firearm_leg_DefenderOfTheMotherland", 1.0);
             Item("Throwable_Molotov", 1.0);
         }
     }
@@ -291,6 +333,9 @@ import "default.loot"
             Item("Firearm_BurstRifle_BGen", 1.0);
             Item("Firearm_SingleShotRifleGen", 1.0);
             Item("Firearm_SingleShotRifle_BGen", 1.0);
+            Item("Firearm_leg_Mccall9Mm", 1.0);
+            Item("Firearm_leg_CrowdPleaser", 1.0);
+            Item("Firearm_leg_DefenderOfTheMotherland", 1.0);
         }
     }
 

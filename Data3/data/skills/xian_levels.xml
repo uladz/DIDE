@@ -124,6 +124,7 @@
 <level id="25">
 	<prop n="ExpToNextLevel" v="24495"/>
 	<prop n="AllowedSkillsCount" v="24"/>
+	<prop n="MaxHealth" v="230"/>
 </level>
 <level id="26">
 	<prop n="ExpToNextLevel" v="27190"/>
@@ -144,6 +145,7 @@
 <level id="30">
 	<prop n="ExpToNextLevel" v="41281"/>
 	<prop n="AllowedSkillsCount" v="29"/>
+	<prop n="MaxHealth" v="235"/>
 </level>
 <level id="31">
 	<prop n="ExpToNextLevel" v="45823"/>
@@ -164,6 +166,7 @@
 <level id="35">
 	<prop n="ExpToNextLevel" v="69571"/>
 	<prop n="AllowedSkillsCount" v="34"/>
+	<prop n="MaxHealth" v="240"/>
 </level>
 <level id="36">
 	<prop n="ExpToNextLevel" v="77226"/>
@@ -184,6 +187,7 @@
 <level id="40">
 	<prop n="ExpToNextLevel" v="117248"/>
 	<prop n="AllowedSkillsCount" v="39"/>
+	<prop n="MaxHealth" v="245"/>
 </level>
 <level id="41">
 	<prop n="ExpToNextLevel" v="130149"/>
@@ -204,6 +208,7 @@
 <level id="45">
 	<prop n="ExpToNextLevel" v="197597"/>
 	<prop n="AllowedSkillsCount" v="44"/>
+	<prop n="MaxHealth" v="250"/>
 </level>
 <level id="46">
 	<prop n="ExpToNextLevel" v="219339"/>
@@ -224,6 +229,7 @@
 <level id="50">
 	<prop n="ExpToNextLevel" v="333009"/>
 	<prop n="AllowedSkillsCount" v="49"/>
+	<prop n="MaxHealth" v="255"/>
 </level>
 <level id="51">
 	<prop n="ExpToNextLevel" v="369651"/>
@@ -244,6 +250,7 @@
 <level id="55">
 	<prop n="ExpToNextLevel" v="561219"/>
 	<prop n="AllowedSkillsCount" v="54"/>
+	<prop n="MaxHealth" v="260"/>
 </level>
 <level id="56">
 	<prop n="ExpToNextLevel" v="622971"/>
@@ -262,5 +269,174 @@
 	<prop n="AllowedSkillsCount" v="58"/>
 </level>
 <level id="60">
+	<prop n="ExpToNextLevel" v="945795"/>
 	<prop n="AllowedSkillsCount" v="59"/>
+	<prop n="MaxHealth" v="265"/>
+</level>
+<level id="61">
+	<prop n="ExpToNextLevel" v="1049833"/>
+	<prop n="AllowedSkillsCount" v="60"/>
+</level>
+<level id="62">
+	<prop n="ExpToNextLevel" v="1165315"/>
+	<prop n="AllowedSkillsCount" v="61"/>
+</level>
+<level id="63">
+	<prop n="ExpToNextLevel" v="1293500"/>
+	<prop n="AllowedSkillsCount" v="62"/>
+</level>
+<level id="64">
+	<prop n="ExpToNextLevel" v="1435785"/>
+	<prop n="AllowedSkillsCount" v="63"/>
+</level>
+<level id="65">
+	<prop n="ExpToNextLevel" v="1593722"/>
+	<prop n="AllowedSkillsCount" v="64"/>
+	<prop n="MaxHealth" v="270"/>
+</level>
+<level id="66">
+	<prop n="ExpToNextLevel" v="1769032"/>
+	<prop n="AllowedSkillsCount" v="65"/>
+</level>
+<level id="67">
+	<prop n="ExpToNextLevel" v="1963626"/>
+	<prop n="AllowedSkillsCount" v="66"/>
+</level>
+<level id="68">
+	<prop n="ExpToNextLevel" v="2179625"/>
+	<prop n="AllowedSkillsCount" v="67"/>
+</level>
+<level id="69">
+	<prop n="ExpToNextLevel" v="2419384"/>
+	<prop n="AllowedSkillsCount" v="68"/>
+</level>
+<level id="70">
+	<prop n="ExpToNextLevel" v="2685517"/>
+	<prop n="AllowedSkillsCount" v="69"/>
+	<prop n="MaxHealth" v="275"/>
+</level>
+<level id="71">
+	<prop n="ExpToNextLevel" v="2980924"/>
+	<prop n="AllowedSkillsCount" v="70"/>
+</level>
+<level id="72">
+	<prop n="ExpToNextLevel" v="3308826"/>
+	<prop n="AllowedSkillsCount" v="71"/>
+</level>
+<level id="73">
+	<prop n="ExpToNextLevel" v="3672797"/>
+	<prop n="AllowedSkillsCount" v="72"/>
+</level>
+<level id="74">
+	<prop n="ExpToNextLevel" v="4076805"/>
+	<prop n="AllowedSkillsCount" v="73"/>
+</level>
+<level id="75">
+	<prop n="ExpToNextLevel" v="4525254"/>
+	<prop n="AllowedSkillsCount" v="74"/>
+	<prop n="MaxHealth" v="280"/>
+</level>
+<level id="76">
+	<prop n="ExpToNextLevel" v="5023032"/>
+	<prop n="AllowedSkillsCount" v="75"/>
+</level>
+<level id="77">
+	<prop n="ExpToNextLevel" v="5575566"/>
+	<prop n="AllowedSkillsCount" v="76"/>
+</level>
+<level id="78">
+	<prop n="ExpToNextLevel" v="6188879"/>
+	<prop n="AllowedSkillsCount" v="77"/>
+</level>
+<level id="79">
+	<prop n="ExpToNextLevel" v="6869656"/>
+	<prop n="AllowedSkillsCount" v="78"/>
+</level>
+<level id="80">
+	<prop n="ExpToNextLevel" v="7625319"/>
+	<prop n="AllowedSkillsCount" v="79"/>
+	<prop n="MaxHealth" v="285"/>
+</level>
+<level id="81">
+	<prop n="ExpToNextLevel" v="8464105"/>
+	<prop n="AllowedSkillsCount" v="80"/>
+</level>
+<level id="82">
+	<prop n="ExpToNextLevel" v="9395157"/>
+	<prop n="AllowedSkillsCount" v="81"/>
+</level>
+<level id="83">
+	<prop n="ExpToNextLevel" v="10428625"/>
+	<prop n="AllowedSkillsCount" v="82"/>
+</level>
+<level id="84">
+	<prop n="ExpToNextLevel" v="11575774"/>
+	<prop n="AllowedSkillsCount" v="83"/>
+</level>
+<level id="85">
+	<prop n="ExpToNextLevel" v="12849110"/>
+	<prop n="AllowedSkillsCount" v="84"/>
+	<prop n="MaxHealth" v="290"/>
+</level>
+<level id="86">
+	<prop n="ExpToNextLevel" v="14262513"/>
+	<prop n="AllowedSkillsCount" v="85"/>
+</level>
+<level id="87">
+	<prop n="ExpToNextLevel" v="15831390"/>
+	<prop n="AllowedSkillsCount" v="86"/>
+</level>
+<level id="88">
+	<prop n="ExpToNextLevel" v="17572843"/>
+	<prop n="AllowedSkillsCount" v="87"/>
+</level>
+<level id="89">
+	<prop n="ExpToNextLevel" v="19505856"/>
+	<prop n="AllowedSkillsCount" v="88"/>
+</level>
+<level id="90">
+	<prop n="ExpToNextLevel" v="21651501"/>
+	<prop n="AllowedSkillsCount" v="89"/>
+	<prop n="MaxHealth" v="295"/>
+</level>
+<level id="91">
+	<prop n="ExpToNextLevel" v="24033167"/>
+	<prop n="AllowedSkillsCount" v="90"/>
+</level>
+<level id="92">
+	<prop n="ExpToNextLevel" v="26676816"/>
+	<prop n="AllowedSkillsCount" v="91"/>
+</level>
+<level id="93">
+	<prop n="ExpToNextLevel" v="29611266"/>
+	<prop n="AllowedSkillsCount" v="92"/>
+</level>
+<level id="94">
+	<prop n="ExpToNextLevel" v="32868506"/>
+	<prop n="AllowedSkillsCount" v="93"/>
+</level>
+<level id="95">
+	<prop n="ExpToNextLevel" v="36484042"/>
+	<prop n="AllowedSkillsCount" v="94"/>
+	<prop n="MaxHealth" v="300"/>
+</level>
+<level id="96">
+	<prop n="ExpToNextLevel" v="40497287"/>
+	<prop n="AllowedSkillsCount" v="95"/>
+</level>
+<level id="97">
+	<prop n="ExpToNextLevel" v="44951989"/>
+	<prop n="AllowedSkillsCount" v="96"/>
+</level>
+<level id="98">
+	<prop n="ExpToNextLevel" v="49896708"/>
+	<prop n="AllowedSkillsCount" v="97"/>
+</level>
+<level id="99">
+	<prop n="ExpToNextLevel" v="55385346"/>
+	<prop n="AllowedSkillsCount" v="98"/>
+</level>
+<level id="100">
+	<prop n="AllowedSkillsCount" v="99"/>
+	<prop n="MaxHealth" v="305"/>
 </level>

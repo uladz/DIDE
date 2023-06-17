@@ -243,10 +243,10 @@
 	<prop n="GrappleEscapeMul" v="2"/>	
 	<prop n="EnemyGrabChance" v="1"/>	
 	
-	<prop n="MaxAmmoPistol" v="50"/>
-	<prop n="MaxAmmoRifle" v="60"/>``
-	<prop n="MaxAmmoShotgun" v="20"/>
-	<prop n="MaxAmmoSniper" v="15"/>	
+	<prop n="MaxAmmoPistol" v="100"/>
+	<prop n="MaxAmmoRifle" v="150"/>
+	<prop n="MaxAmmoShotgun" v="50"/>
+	<prop n="MaxAmmoSniper" v="25"/>
 		
 	<prop n="FirearmsPistolReloadTimeMul" v="1.0"/>	
 	<prop n="FirearmsRevolverReloadTimeMul" v="1.0"/>	

@@ -159,9 +159,9 @@
             <tier_req tier="0" cat="Tree3" value="1"/>
             <effect id="AggroFactor" change="0.1"/>
         </skill>
-        <skill id="DeeperPockets" cat="Tree3" max_level="3" tier="2" desc_params="2;4;6">
+        <skill id="DeeperPockets" cat="Tree3" max_level="3" tier="2" desc_params="4;8;12">
             <tier_req tier="1" cat="Tree3" value="3"/>
-            <effect id="InventorySize" change="2"/>
+            <effect id="InventorySize" change="4"/>
         </skill>
         <skill id="KnockDownHurts" cat="Tree3" max_level="3" tier="4" desc_params="x1;x2;x3">
             <tier_req tier="3" cat="Tree3" value="1"/>

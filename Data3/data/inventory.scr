@@ -3765,7 +3765,7 @@ sub main()
         FF_Right(0.6);
         FF_Duration(0.2);
         FF_FadeOut(0.0);
-        Reparable(false);
+        Reparable(true);
         Color(Color_White);
     }
 

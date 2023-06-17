@@ -122,6 +122,7 @@
             <effect id="BulletReloadSpeed" change="-0.05"/>
             <effect id="FirearmsMoveAccuracyReduce" change="-0.1"/>
             <effect id="BulletCriticalChance" change="0.03"/>
+            <effect id="BulletCriticalDmgMul" change="0.05"/>
             <effect id="BulletAccuracyFactor" change="0.05"/>
             <effect id="BulletRecoilFactor" change="0.05"/>
             <effect id="GunslingerLevel" change="1"/>
@@ -167,9 +168,9 @@
             <effect id="BoostAuraRange" change="5"/>    <!-- Converted-->
             <effect id="BoostAuraTeamFactor" change="0.15"/>
         </skill>
-        <skill id="DeeperPockets" cat="Tree3" max_level="3" tier="1" desc_params="2;4;6">
+        <skill id="DeeperPockets" cat="Tree3" max_level="3" tier="1" desc_params="4;8;12">
             <tier_req tier="0" cat="Tree3" value="1"/>
-            <effect id="InventorySize" change="2"/>
+            <effect id="InventorySize" change="4"/>
         </skill>
         <skill id="RVExtraStamina" cat="Tree3" max_level="3" tier="2" desc_params="+5%;+10%;+15%">
             <tier_req tier="1" cat="Tree3" value="3"/>
@@ -208,9 +209,9 @@
         </skill>
         <skill id="RVAmmoManiac" cat="Tree3" max_level="3" tier="5">
             <tier_req tier="4" cat="Tree3" value="3"/>
-            <effect id="MaxAmmoPistol" change="10"/>
-            <effect id="MaxAmmoRifle" change="10"/>
-            <effect id="MaxAmmoShotgun" change="5"/>
+            <effect id="MaxAmmoPistol" change="20"/>
+            <effect id="MaxAmmoRifle" change="30"/>
+            <effect id="MaxAmmoShotgun" change="10"/>
             <effect id="MaxAmmoSniper" change="5"/>
         </skill>
     </postfix>

@@ -400,7 +400,7 @@ sub main()
         Condition(0);
         Damage(10.0);
         CriticalProb(0.05);
-        CriticalDamage(40.0);
+        CriticalDamage(20.0);
         DamageRange(1.9);    // Converted
         Force(30.0);
         PhysicsDamage(50.0);
